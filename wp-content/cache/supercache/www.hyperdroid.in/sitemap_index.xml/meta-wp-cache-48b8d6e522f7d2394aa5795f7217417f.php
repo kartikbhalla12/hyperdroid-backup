@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Vary":"Vary: Cookie","X-Robots-Tag":"X-Robots-Tag: noindex, follow","Last-Modified":"Last-Modified: Sun, 31 Dec 2017 07:44:27 GMT","Content-Type":"Content-Type: text\/xml; charset=\"UTF-8\""},"uri":"www.hyperdroid.in\/sitemap_index.xml","blog_id":1,"post":0,"key":"www.hyperdroid.in443\/sitemap_index.xml"}
