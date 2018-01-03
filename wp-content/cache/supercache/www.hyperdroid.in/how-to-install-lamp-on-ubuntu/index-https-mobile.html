@@ -1,0 +1,535 @@
+<!doctype html>
+
+<!--[if lt IE 7]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js"><!--<![endif]-->
+
+	<head>
+		<meta charset="UTF-8" />
+
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+				<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+				<link rel="icon" href="http://35.196.242.183/wp-content/uploads/2017/12/2000px-Logo-ubuntu_cof-white_orange-hex.svg_.png">
+		
+		<link rel="pingback" href="https://www.hyperdroid.in/xmlrpc.php">
+		
+		<title>How To Install LAMP on Ubuntu - 17.10</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v6.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="This tutorial is going to show you steps to install LAMP on ubuntu and host websites on it."/>
+<link rel="canonical" href="https://www.hyperdroid.in/how-to-install-lamp-on-ubuntu/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How To Install LAMP on Ubuntu - 17.10" />
+<meta property="og:description" content="This tutorial is going to show you steps to install LAMP on ubuntu and host websites on it." />
+<meta property="og:url" content="https://www.hyperdroid.in/how-to-install-lamp-on-ubuntu/" />
+<meta property="og:site_name" content="Hyperdroid" />
+<meta property="article:section" content="Web Hosting" />
+<meta property="article:published_time" content="2017-12-01T17:54:48+00:00" />
+<meta property="article:modified_time" content="2017-12-17T11:50:37+00:00" />
+<meta property="og:updated_time" content="2017-12-17T11:50:37+00:00" />
+<meta property="og:image" content="https://www.hyperdroid.in/wp-content/uploads/2017/12/featured.jpg" />
+<meta property="og:image:secure_url" content="https://www.hyperdroid.in/wp-content/uploads/2017/12/featured.jpg" />
+<meta property="og:image:width" content="2560" />
+<meta property="og:image:height" content="1600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="This tutorial is going to show you steps to install LAMP on ubuntu and host websites on it." />
+<meta name="twitter:title" content="How To Install LAMP on Ubuntu - 17.10" />
+<meta name="twitter:site" content="@TheDemon1253" />
+<meta name="twitter:image" content="https://www.hyperdroid.in/wp-content/uploads/2017/12/featured.jpg" />
+<meta name="twitter:creator" content="@TheDemon1253" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.hyperdroid.in\/","name":"Hyperdroid","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.hyperdroid.in\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/www.hyperdroid.in\/how-to-install-lamp-on-ubuntu\/","sameAs":["https:\/\/twitter.com\/TheDemon1253"],"@id":"#person","name":"Kartik Bhalla"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Hyperdroid &raquo; Feed" href="https://www.hyperdroid.in/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hyperdroid &raquo; Comments Feed" href="https://www.hyperdroid.in/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hyperdroid &raquo; How To Install LAMP (Apache2) on Ubuntu Comments Feed" href="https://www.hyperdroid.in/how-to-install-lamp-on-ubuntu/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v6.2.6 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+		var disableStr = 'ga-disable-UA-89462011-6';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-89462011-6', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('require', 'linkid', 'linkid.js');
+	__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hyperdroid.in\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='BIGPIX-scroll-style-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/library/css/jquery.mCustomScrollbar.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='BIGPIX-font-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/css/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='BIGPIX-ie-only-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/library/css/ie.css?ver=4.9.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='BIGPIX-raleway-fonts-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/fonts/fonts.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='BIGPIX-stylesheet-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/library/css/style.min.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='BIGPIX-main-stylesheet-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/style.css?ver=4.9.1' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/www.hyperdroid.in","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=6.2.6'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/themes/big-pix/library/js/libs/modernizr.custom.min.js?ver=2.5.3'></script>
+<link rel='https://api.w.org/' href='https://www.hyperdroid.in/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hyperdroid.in/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.hyperdroid.in/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel='shortlink' href='https://www.hyperdroid.in/?p=36' />
+<link rel="alternate" type="application/json+oembed" href="https://www.hyperdroid.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hyperdroid.in%2Fhow-to-install-lamp-on-ubuntu%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.hyperdroid.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hyperdroid.in%2Fhow-to-install-lamp-on-ubuntu%2F&#038;format=xml" />
+  <style>
+      .blog-list .item .hover-ovelay:hover{background: #0a0a0a!important;}
+      body .pagination li a{color: #0a0a0a;}
+      #main-navigation,.full-top-area,footer.footer[role="contentinfo"]{background: #0a0a0a; }
+    </style>
+         <style>
+      .blog-list li .excerpt p,.blog-list .item a,.blog-list .item .date,.blog-list .item time,body .byline.blog,
+      .entry-content p,body .byline.blog a,body .info p.author-desc, body .related ul li .related-info p,body .comment time a,body .comment_content p,footer.footer[role="contentinfo"] .wp-caption p.wp-caption-text{color:#4f4f4f;}
+      body .pagination li:first-child{border-left: 2px solid #4f4f4f; }
+      body .pagination li{border: 2px solid #4f4f4f;}
+    </style>
+
+           <style>
+      .short-divider,body .pagination,body .divider-posted,.blue-btn, .comment-reply-link, #submit,#main-navigation .widget #wp-calendar caption, #main-navigation .wp-caption, #main-navigation button, html #main-navigation input[type="button"], #main-navigation input[type="reset"], #main-navigation input[type="submit"]
+      ,.error404 .searchform input[type="submit"],.footer-widgets .widget #wp-calendar caption,.wp-caption,#main-navigation div#close{background:#ff2121; }
+      .blog-list li .excerpt p a,.blog-list .item a[rel="author"],body .info p.author-desc a,body .related ul li a
+      ,body .comment-reply-link,.blog-list .item h2:hover,#main-navigation .widgettitle,.social-icons a .fa:hover,footer.footer[role="contentinfo"] a:hover,.entry-content p a,#main-navigation a:hover,.no-menu-widgets p{color:#ff2121;}
+      .entry-content blockquote{border-left: 3px solid #ff2121;}
+    </style>
+
+   		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3764796401079806",
+    enable_page_level_ads: true
+  });
+</script>
+	</head>
+
+	<body class="post-template-default single single-post postid-36 single-format-standard" >
+
+		<div id="container">
+
+			<header class="header" role="banner">
+				<div id="inner-header" class="wrap cf">
+										<p id="logo" class="h1"><a href="https://www.hyperdroid.in/" rel="nofollow" style="width:300px;margin:0 auto;display:block;"><img src="http://35.196.242.183/wp-content/uploads/2017/12/Untitled-1.png" alt="Hyperdroid" /></a></p>
+					 					<div id="main-navigation">
+			            <div id="close"><span class="fa fa-times"></span> Close</div>
+			            <div class="clear"></div>
+			            <!-- social icons -->
+				        <div class="social-icons">
+				                   <a href="https://twitter.com/TheDemon1253" class="social-tw" title="https://twitter.com/TheDemon1253" target="_blank"><i class="fa fa-twitter"></i></a>
+             <a href="https://plus.google.com/+KartikBhalla" class="social-tw" title="https://plus.google.com/+KartikBhalla" target="_blank"><i class="fa fa-google-plus"></i></a>
+             <a href="https://www.youtube.com/channel/UCS3TDkQidab81sW_pWbDjsg" class="social-tw" title="https://www.youtube.com/channel/UCS3TDkQidab81sW_pWbDjsg" target="_blank"><i class="fa fa-youtube"></i></a>
+              <a href="mailto:kartikbhalla12@gmail.com" class="social-tw" title="kartikbhalla12@gmail.com" target="_blank"><i class="fa fa-envelope"></i> </i></a>
+  	                	</div>
+	                	<!-- social icons -->
+
+			            
+						<div id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://www.hyperdroid.in/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div>		<div id="recent-posts-3" class="widget widget_recent_entries">		<h4 class="widgettitle">Recent Posts</h4>		<ul>
+											<li>
+					<a href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/">Setting Up Virtual Machine Using VirtualBox</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/">SSL Certification Using Let&#8217;s Encrypt</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/">Ubuntu 17.10 Desktop Installation</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/hosting-multiple-websites-on-ubuntu/">Hosting Multiple Websites On Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/installing-wordpress-on-ubuntu/">Installing WordPress On Ubuntu</a>
+									</li>
+					</ul>
+		</div><div id="recent-comments-3" class="widget widget_recent_comments"><h4 class="widgettitle">Recent Comments</h4><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Sushant</span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-10">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link">Jagrav</span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-9">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://akhilnarang.me' rel='external nofollow' class='url'>Akhil Narang</a></span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-8">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.hyperdroid.in' rel='external nofollow' class='url'>Kartik B.</a></span> on <a href="https://www.hyperdroid.in/installing-h5ai-on-your-web-server/#comment-5">Installing h5ai on Your Web Server</a></li><li class="recentcomments"><span class="comment-author-link">Xaif</span> on <a href="https://www.hyperdroid.in/installing-h5ai-on-your-web-server/#comment-3">Installing h5ai on Your Web Server</a></li></ul></div><div id="archives-3" class="widget widget_archive"><h4 class="widgettitle">Archives</h4>		<ul>
+			<li><a href='https://www.hyperdroid.in/2017/12/'>December 2017</a></li>
+		</ul>
+		</div><div id="categories-3" class="widget widget_categories"><h4 class="widgettitle">Categories</h4>		<ul>
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basic</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://www.hyperdroid.in/category/linux-basics/" >Linux Basics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a>
+</li>
+		</ul>
+</div><div id="meta-3" class="widget widget_meta"><h4 class="widgettitle">Meta</h4>			<ul>
+			<li><a rel="nofollow" href="https://www.hyperdroid.in/wp-login.php?action=register">Register</a></li>			<li><a rel="nofollow" href="https://www.hyperdroid.in/wp-login.php">Log in</a></li>
+			<li><a href="https://www.hyperdroid.in/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://www.hyperdroid.in/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</div>
+												<div class="margin-bottom"></div>
+        			</div>
+					<div class="side-nav" id="push"><span class="fa fa-bars"></span></div>
+
+				</div>
+
+			</header>
+			<div id="content">
+				
+				<div id="inner-content" class=" cf">
+
+						
+													<header class="article-header full-top-area" style="background-image:url('https://www.hyperdroid.in/wp-content/uploads/2017/12/featured.jpg');background-size:cover;background-position:center;position:relative;">
+						
+						
+								<div class="bg-overlay"></div>
+								<div class="table">
+									<div class="table-cell">
+										<h1 class="entry-title single-title" itemprop="headline">How To Install LAMP (Apache2) on Ubuntu</h1>
+										<div class="short-divider"></div>
+										<a class="arrow fa fa-angle-down" href="#blog"></a>
+									</div>
+								</div>
+							</header> 						
+						<div id="blog" class="divider-posted">
+						<p class="byline vcard blog">
+		                    Posted on <time class="updated" datetime="2017-12-1" pubdate>December 1, 2017</time> by <span class="author"><a href="https://www.hyperdroid.in" title="Visit Kartik B.&#8217;s website" rel="author external">Kartik B.</a></span>		                    under <a href="https://www.hyperdroid.in/category/web-hosting/" rel="category tag">Web Hosting</a>                		</p>
+
+                		</div>
+						<div id="inner-content" class="wrap cf post-content-single">
+
+													
+							<article id="post-36" class="cf post-36 post type-post status-publish format-standard has-post-thumbnail hentry category-web-hosting" role="article">
+								<section class="entry-content cf" itemprop="articleBody">
+  
+  <blockquote><p><span style="color: #000000;">This brief tutorial is going to show you steps to install <strong>LAMP</strong> on Ubuntu server 17.04 / 17.10 and older. LAMP is an acronym for <strong><span style="color: #ff0000;">L</span>inux,<span style="color: #ff0000;"> A</span>pache2, <span style="color: #ff0000;">M</span>ySQL and <span style="color: #ff0000;">P</span>HP</strong>. It’s a combination of open software that are typically used to <strong>host and run dynamic websites</strong> and web applications.</span></p></blockquote>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>PREREQUISITES</strong></span></h2>
+<p style="text-align: center;"><span style="color: #000000;">To setup web server on your own Linux computer, we’ll require the following three components to be installed –</span></p>
+<ul style="text-align: center;">
+<li><span style="color: #000000;"><strong>APACHE2</strong> : apache2 is open-source HTTP server. It is still most popular web-server used worldwide today.</span></li>
+<li><span style="color: #000000;"><strong>PHP AND PHP SQLITE COMPONENT</strong>: PHP is server side scripting language. PHP and its component will help you to interact with backend mySQL database for your website.</span></li>
+<li><span style="color: #000000;"><strong>MYSQL</strong>: mySQL is database solution in which you shall be storing your data in table.</span></li>
+</ul>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>STEP 1 — INSTALL APACHE2</strong></span></h2>
+<p style="text-align: center;"><span style="color: #000000;">Apache is open source web-server software that powers much of the web today. It is maintained by apache-http-project.</span></p>
+<p style="text-align: center;"><span style="color: #000000;">Explore more here: <a style="color: #000000;" href="https://httpd.apache.org/">https://httpd.apache.org/</a></span></p>
+<p style="text-align: center;"><span style="color: #000000;">Open your terminal and type in commands –</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">sudo apt-get update
+sudo apt-get install apache2</span></pre>
+<p style="text-align: center;"><span style="color: #000000;">To check if apache2 is installed properly –</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">sudo service apache2 restart</span></pre>
+<p style="text-align: center;"><span style="color: #000000;">Open your web-browser and open link using ip–address of your server. If you are practicing locally, you can type in <strong>localhost or 127.0.0.1.</strong></span></p>
+<img class="aligncenter" src="https://github.com/TheDemon12/hyperdroid-media/raw/master/hosting/0.jpg" width="753" height="423" />
+<p style="text-align: center;"><span style="color: #000000;">By default, apache runs on port 80 and hence you need not provide the port number in your browser.</span></p>
+<p style="text-align: center;"><strong><span style="color: #000000;">127.0.0.1</span></strong></p>
+<p style="text-align: center;"><span style="color: #000000;">Or ip-address of your server. For example 198.162.12.52</span></p>
+<p style="text-align: center;"><span style="color: #000000;">It should show message like it works!</span></p>
+<p style="text-align: center;"><span style="color: #000000;">To change port address, you need to edit the configuration file at <strong>/etc/apache2/ports.conf</strong>  and change the <strong>Listen 80</strong> to your desired port number. After edit you need to restart the apache2 server.</span></p>
+<p style="text-align: center;"><img class="aligncenter" src="https://github.com/TheDemon12/hyperdroid-media/raw/master/hosting/01.jpg" width="766" height="430" /></p>
+<p style="text-align: center;"><span style="color: #000000;">To restart apache2 web server –</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">sudo service apache2 restart</span></pre>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>STEP 2 — INSTALL mySQL</strong></span></h2>
+<p style="text-align: center;"><span style="color: #000000;">mySQL is the database management solution that helps you to store and retrieve data in tables. Since in this tutorial we shall be using php, we will also need to install<strong> php7.0-mysql</strong> component.</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">sudo apt-get install mysql-server mysql-client</span></pre>
+<p style="text-align: center;"><span style="color: #000000;">Check if mySQL is installed properly, open mysql on terminal with command –</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">sudo mysql -uroot</span></pre>
+<p style="text-align: center;"><span style="color: #000000;">If you set the password during installation open with <strong>-p</strong> parameter –</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">sudo mysql -uroot -p</span></pre>
+<h2><img class="aligncenter" src="https://github.com/TheDemon12/hyperdroid-media/raw/master/hosting/02.jpg" width="768" height="432" /></h2>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>STEP 3 — INSTALL PHP</strong></span></h2>
+<p style="text-align: center;"><span style="color: #000000;">PHP is open source web server scripting language. It is back-end scripting language that will help you to interact with the mySQL database. For example, if you want to show the tabular employee list stored in your mySQL database in your website, with the help of PHP you can interact with mySQL, retrieve the employee list and render in html page. Php-mysql library helps you in this regard. PHP provides multiple auxiliary libraries for different needs. </span></p>
+<p style="text-align: center;"><span style="color: #000000;">To install PHP and php-mysql</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">sudo apt-get install php libapache2-mod-php php-mysql</span></pre>
+<p style="text-align: center;"><span style="color: #000000;">Check if php is installed correctly, make file <strong>/var/www/html/info.php</strong> and add the following content to this file –</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">&lt;?php
+
+phpinfo();
+
+?&gt;</span></pre>
+<img class="aligncenter" src="https://github.com/TheDemon12/hyperdroid-media/raw/master/hosting/03.jpg" width="781" height="439" />
+<p style="text-align: center;"><span style="color: #000000;">Restart apache2 web server –</span></p>
+<pre style="text-align: center;"><span style="font-family: 'courier new', courier, monospace;">sudo service apache2 restart</span></pre>
+<p style="text-align: center;"><span style="color: #000000;">Open web browser and navigate to</span></p>
+<p style="text-align: center;"><strong><span style="color: #000000;">127.0.0.1/info.php</span></strong></p>
+<p style="text-align: center;"><span style="color: #000000;">If you are using remote server replace ip with server’s ip address.</span></p>
+<p style="text-align: center;"><span style="color: #000000;">Upon success, you should see following webpage –</span></p>
+<p style="text-align: center;"><span style="color: #000000;"><strong> <img class="aligncenter" src="https://github.com/TheDemon12/hyperdroid-media/raw/master/hosting/04.jpg" width="769" height="432" /></strong></span></p>
+<p style="text-align: center;"><span style="color: #000000;">Well that’s it, you are ready with the basic setup required for this tutorial</span></p>
+</section> 
+								
+				                
+				                <!-- next/prev posts area -->
+								<div class="next-prev-post">
+									<div class="prev">
+																			</div>
+									<div class="next">
+										<span>NEXT POST</span> <a href="https://www.hyperdroid.in/installing-h5ai-on-your-web-server/" rel="next">Installing h5ai on Your Web Server</a> &rarr;									</div>
+									<div class="clear"></div>
+								</div> <!-- next-prev-post -->
+
+				                <footer class="article-footer ">
+				                  <div class="avatar">
+				                  	<img alt='' src='https://secure.gravatar.com/avatar/98767f2f56c91ee425e994ce6e737940?s=150&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/98767f2f56c91ee425e994ce6e737940?s=300&#038;d=retro&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' />				                  </div>
+				                  <div class="info">
+					                  <p class="author"><span>Written by</span> Kartik B.</p>
+					                  <p class="author-desc">  </p>
+				                  </div>
+				                  <div class="clear"></div>
+				                </footer> 
+				                				                    					                    <div class="related posts related-hide">
+						                    <h3>Related Posts</h3>
+						                    <ul> 
+							                    							                    
+						                            <li>
+						                              <div class="related-image">
+							                              <a href="https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/" rel="bookmark" title="SSL Certification Using Let&#8217;s Encrypt">
+							                                							                                
+							                                <img src="https://www.hyperdroid.in/wp-content/uploads/2017/12/le-logo-wide-1-1.png" class="attachment-BIGPIX-thumb-image-300by300 size-BIGPIX-thumb-image-300by300 wp-post-image" alt="" />							                              </a>
+						                              </div>
+
+						                              <div class="related-info">
+						                                  <h3>SSL Certification Using Let&#8217;s Encrypt</h3>
+						                                  <p>Let’s Encrypt is a free, automated, and open certificate authority that provides an easy way to obtain and install free TLS/SSL certificates, thereby enabling encrypted HTTPS on web servers. It simplifies the process by providing a software client, Certbot, that attempts to automate most (if not all) of the required steps. In this tutorial, you will use Certbot&#8230;  <a class="excerpt-read-more" href="https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/" title="Read SSL Certification Using Let&#8217;s Encrypt">Read more &raquo;</a></p>
+						                                  <p class="byline vcard">
+						                                      Posted on <time class="updated" datetime="2017-12-20" pubdate>December 20, 2017</time> by <a href="https://www.hyperdroid.in/author/thedemon12/" title="Posts by Kartik B." rel="author">Kartik B.</a>						                                    
+						                                  </p>
+						                              </div>
+						                               
+						                            </li>
+							                    
+							                    							                    
+						                            <li>
+						                              <div class="related-image">
+							                              <a href="https://www.hyperdroid.in/hosting-multiple-websites-on-ubuntu/" rel="bookmark" title="Hosting Multiple Websites On Ubuntu">
+							                                							                                
+							                                <img src="https://www.hyperdroid.in/wp-content/uploads/2017/12/Ubuntu-Wallpapers-12.jpg" class="attachment-BIGPIX-thumb-image-300by300 size-BIGPIX-thumb-image-300by300 wp-post-image" alt="" />							                              </a>
+						                              </div>
+
+						                              <div class="related-info">
+						                                  <h3>Hosting Multiple Websites On Ubuntu</h3>
+						                                  <p>The Apache web server is the most popular way of serving web content on the internet. It accounts for more than half of all active websites on the internet and is extremely powerful and flexible. These designations allow the administrator to use one server to host multiple domains or sites off of a single interface&#8230;  <a class="excerpt-read-more" href="https://www.hyperdroid.in/hosting-multiple-websites-on-ubuntu/" title="Read Hosting Multiple Websites On Ubuntu">Read more &raquo;</a></p>
+						                                  <p class="byline vcard">
+						                                      Posted on <time class="updated" datetime="2017-12-16" pubdate>December 16, 2017</time> by <a href="https://www.hyperdroid.in/author/thedemon12/" title="Posts by Kartik B." rel="author">Kartik B.</a>						                                    
+						                                  </p>
+						                              </div>
+						                               
+						                            </li>
+							                    
+							                    							                    
+						                            <li>
+						                              <div class="related-image">
+							                              <a href="https://www.hyperdroid.in/installing-wordpress-on-ubuntu/" rel="bookmark" title="Installing WordPress On Ubuntu">
+							                                							                                
+							                                <img src="https://www.hyperdroid.in/wp-content/uploads/2017/12/featured-1.png" class="attachment-BIGPIX-thumb-image-300by300 size-BIGPIX-thumb-image-300by300 wp-post-image" alt="" />							                              </a>
+						                              </div>
+
+						                              <div class="related-info">
+						                                  <h3>Installing WordPress On Ubuntu</h3>
+						                                  <p>At this time, WordPress is the most popular CMS (content management system) on the internet. It allows you to easily set up flexible blogs and websites on top of a MySQL backend with PHP processing. WordPress has seen incredible adoption and is a great choice for getting a website up and running quickly. In this&#8230;  <a class="excerpt-read-more" href="https://www.hyperdroid.in/installing-wordpress-on-ubuntu/" title="Read Installing WordPress On Ubuntu">Read more &raquo;</a></p>
+						                                  <p class="byline vcard">
+						                                      Posted on <time class="updated" datetime="2017-12-6" pubdate>December 6, 2017</time> by <a href="https://www.hyperdroid.in/author/thedemon12/" title="Posts by Kartik B." rel="author">Kartik B.</a>						                                    
+						                                  </p>
+						                              </div>
+						                               
+						                            </li>
+							                    
+							                    							                    
+						                            <li>
+						                              <div class="related-image">
+							                              <a href="https://www.hyperdroid.in/installing-h5ai-on-your-web-server/" rel="bookmark" title="Installing h5ai on Your Web Server">
+							                                							                                
+							                                <img src="https://www.hyperdroid.in/wp-content/uploads/2017/12/featured.png" class="attachment-BIGPIX-thumb-image-300by300 size-BIGPIX-thumb-image-300by300 wp-post-image" alt="" />							                              </a>
+						                              </div>
+
+						                              <div class="related-info">
+						                                  <h3>Installing h5ai on Your Web Server</h3>
+						                                  <p>h5ai is a modern file indexer for HTTP web servers with focus on your files. Directories are displayed in an appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. PREREQUISITES Before you begin this guide, there are some important steps that you need to complete on your server&#8230;.  <a class="excerpt-read-more" href="https://www.hyperdroid.in/installing-h5ai-on-your-web-server/" title="Read Installing h5ai on Your Web Server">Read more &raquo;</a></p>
+						                                  <p class="byline vcard">
+						                                      Posted on <time class="updated" datetime="2017-12-2" pubdate>December 2, 2017</time> by <a href="https://www.hyperdroid.in/author/thedemon12/" title="Posts by Kartik B." rel="author">Kartik B.</a>						                                    
+						                                  </p>
+						                              </div>
+						                               
+						                            </li>
+							                    
+							                    							                    <div class="clear"></div>
+						                      </ul>
+
+					                     </div>
+				                                   
+
+               				
+
+  
+  	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/how-to-install-lamp-on-ubuntu/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.hyperdroid.in/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='36' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>			</form>
+			</div><!-- #respond -->
+	
+         					</article> 						
+						
+					</div>
+					
+
+					<!--<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
+
+	
+		<div id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://www.hyperdroid.in/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div>		<div id="recent-posts-3" class="widget widget_recent_entries">		<h4 class="widgettitle">Recent Posts</h4>		<ul>
+											<li>
+					<a href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/">Setting Up Virtual Machine Using VirtualBox</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/">SSL Certification Using Let&#8217;s Encrypt</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/">Ubuntu 17.10 Desktop Installation</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/hosting-multiple-websites-on-ubuntu/">Hosting Multiple Websites On Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/installing-wordpress-on-ubuntu/">Installing WordPress On Ubuntu</a>
+									</li>
+					</ul>
+		</div><div id="recent-comments-3" class="widget widget_recent_comments"><h4 class="widgettitle">Recent Comments</h4><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Sushant</span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-10">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link">Jagrav</span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-9">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://akhilnarang.me' rel='external nofollow' class='url'>Akhil Narang</a></span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-8">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.hyperdroid.in' rel='external nofollow' class='url'>Kartik B.</a></span> on <a href="https://www.hyperdroid.in/installing-h5ai-on-your-web-server/#comment-5">Installing h5ai on Your Web Server</a></li><li class="recentcomments"><span class="comment-author-link">Xaif</span> on <a href="https://www.hyperdroid.in/installing-h5ai-on-your-web-server/#comment-3">Installing h5ai on Your Web Server</a></li></ul></div><div id="archives-3" class="widget widget_archive"><h4 class="widgettitle">Archives</h4>		<ul>
+			<li><a href='https://www.hyperdroid.in/2017/12/'>December 2017</a></li>
+		</ul>
+		</div><div id="categories-3" class="widget widget_categories"><h4 class="widgettitle">Categories</h4>		<ul>
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basic</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://www.hyperdroid.in/category/linux-basics/" >Linux Basics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a>
+</li>
+		</ul>
+</div><div id="meta-3" class="widget widget_meta"><h4 class="widgettitle">Meta</h4>			<ul>
+			<li><a rel="nofollow" href="https://www.hyperdroid.in/wp-login.php?action=register">Register</a></li>			<li><a rel="nofollow" href="https://www.hyperdroid.in/wp-login.php">Log in</a></li>
+			<li><a href="https://www.hyperdroid.in/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://www.hyperdroid.in/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</div>
+	
+</div>-->
+
+				</div>
+
+			</div>
+
+			<footer class="footer" role="contentinfo">
+									<div class="footer-widgets wrap">
+
+						<div id="categories-6" class="widget widget_categories"><h4 class="widgettitle">Categories</h4>		<ul>
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basic</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://www.hyperdroid.in/category/linux-basics/" >Linux Basics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a>
+</li>
+		</ul>
+</div>		<div id="recent-posts-6" class="widget widget_recent_entries">		<h4 class="widgettitle">Recent Posts</h4>		<ul>
+											<li>
+					<a href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/">Setting Up Virtual Machine Using VirtualBox</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/">SSL Certification Using Let&#8217;s Encrypt</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/">Ubuntu 17.10 Desktop Installation</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/hosting-multiple-websites-on-ubuntu/">Hosting Multiple Websites On Ubuntu</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/installing-wordpress-on-ubuntu/">Installing WordPress On Ubuntu</a>
+									</li>
+					</ul>
+		</div>		
+					<div class="clear"></div>
+					</div>
+								<div id="inner-footer" class="wrap cf">
+
+					<div class="social-icons footer-social">
+		           			       <a href="https://twitter.com/TheDemon1253" class="social-tw" title="https://twitter.com/TheDemon1253" target="_blank"><i class="fa fa-twitter"></i></a>
+             <a href="https://plus.google.com/+KartikBhalla" class="social-tw" title="https://plus.google.com/+KartikBhalla" target="_blank"><i class="fa fa-google-plus"></i></a>
+             <a href="https://www.youtube.com/channel/UCS3TDkQidab81sW_pWbDjsg" class="social-tw" title="https://www.youtube.com/channel/UCS3TDkQidab81sW_pWbDjsg" target="_blank"><i class="fa fa-youtube"></i></a>
+              <a href="mailto:kartikbhalla12@gmail.com" class="social-tw" title="kartikbhalla12@gmail.com" target="_blank"><i class="fa fa-envelope"></i> </i></a>
+                  	</div> <!-- social-icons-->
+
+					<p class="source-org copyright">
+						 &#169; 2018 Hyperdroid 
+						
+					</p>
+
+				</div>
+
+			</footer>
+
+		</div>
+
+		<script type='text/javascript' src='https://www.hyperdroid.in/wp-includes/js/comment-reply.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/themes/big-pix/library/js/jquery.mCustomScrollbar.concat.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/themes/big-pix/library/js/scripts.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+	</body>
+
+</html> <!-- end of site. what a ride! -->
+<!-- Dynamic page generated in 0.065 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-01-03 13:29:18 -->
+
+<!-- super cache -->
