@@ -93,7 +93,7 @@ msgstr ""
 msgid "Use it to build your full online store with a stunning design and features like quick-view."
 msgstr ""
 
-#: comments.php:35, inc/template-tags.php:339, template-parts/content-offset.php:17
+#: comments.php:35, inc/template-tags.php:337, template-parts/content-offset.php:17
 msgid "1 Comment"
 msgstr ""
 
@@ -356,7 +356,7 @@ msgstr ""
 msgid "The screen width in pixels when the primary menu changes to a mobile menu."
 msgstr ""
 
-#: inc/settings.php:167, inc/template-tags.php:459
+#: inc/settings.php:167, inc/template-tags.php:457
 msgid "Post navigation"
 msgstr ""
 
@@ -708,55 +708,59 @@ msgstr ""
 msgid " View Cart "
 msgstr ""
 
-#: inc/template-tags.php:290, inc/template-tags.php:315
+#: inc/template-tags.php:290
 msgid "Continue reading"
 msgstr ""
 
-#: inc/template-tags.php:329
+#: inc/template-tags.php:313
+msgid "Continue reading now"
+msgstr ""
+
+#: inc/template-tags.php:327
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:335, template-parts/content-offset.php:13
+#: inc/template-tags.php:333, template-parts/content-offset.php:13
 msgid "Post a Comment"
 msgstr ""
 
-#: inc/template-tags.php:337, template-parts/content-offset.php:15
+#: inc/template-tags.php:335, template-parts/content-offset.php:15
 msgid " Comments"
 msgstr ""
 
-#: inc/template-tags.php:346, inc/template-tags.php:390
+#: inc/template-tags.php:344, inc/template-tags.php:388
 msgid "Sticky"
 msgstr ""
 
-#: inc/template-tags.php:428
+#: inc/template-tags.php:426
 msgid "Posts navigation"
 msgstr ""
 
-#: inc/template-tags.php:432
+#: inc/template-tags.php:430
 msgid "Older posts"
 msgstr ""
 
-#: inc/template-tags.php:436
+#: inc/template-tags.php:434
 msgid "Newer posts"
 msgstr ""
 
-#: inc/template-tags.php:462
+#: inc/template-tags.php:460
 msgid "Previous Post"
 msgstr ""
 
-#: inc/template-tags.php:465
+#: inc/template-tags.php:463
 msgid "Next Post"
 msgstr ""
 
-#: inc/template-tags.php:494, inc/template-tags.php:545, yarpp-template-unwind.php:5
+#: inc/template-tags.php:492, inc/template-tags.php:543, yarpp-template-unwind.php:5
 msgid "You may also like"
 msgstr ""
 
-#: inc/template-tags.php:512, yarpp-template-unwind.php:21
+#: inc/template-tags.php:510, yarpp-template-unwind.php:21
 msgid "No related posts."
 msgstr ""
 
-#: inc/template-tags.php:555
+#: inc/template-tags.php:553
 msgid "No related projects."
 msgstr ""
 

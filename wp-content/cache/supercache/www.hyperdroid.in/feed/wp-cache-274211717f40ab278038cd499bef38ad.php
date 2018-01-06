@@ -12,13 +12,13 @@
 	<atom:link href="https://www.hyperdroid.in/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.hyperdroid.in</link>
 	<description>All About Tech</description>
-	<lastBuildDate>Thu, 04 Jan 2018 13:43:12 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 06 Jan 2018 04:54:13 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.1</generator>
-	<item>
-		<title>ownCloud: Your Personal Network Drive</title>
+<site xmlns="com-wordpress:feed-additions:1">140779289</site>	<item>
+		<title>ownCloud : Your Personal Network Drive</title>
 		<link>https://www.hyperdroid.in/owncloud-personal-network-drive/</link>
 		<comments>https://www.hyperdroid.in/owncloud-personal-network-drive/#respond</comments>
 		<pubDate>Thu, 04 Jan 2018 08:13:07 +0000</pubDate>
@@ -26,12 +26,12 @@
 				<category><![CDATA[Web Hosting]]></category>
 
 		<guid isPermaLink="false">https://www.hyperdroid.in/?p=270</guid>
-		<description><![CDATA[<p>ownCloud is a suite of client–server software for creating file hosting services and using them. ownCloud is functionally very similar to the widely used Dropbox, with the primary functional difference being that the Server Edition of ownCloud is free and open-source, and thereby allowing anyone to install and operate it without charge on a private server. PREREQUISITES Before you begin this guide, there...  <a class="excerpt-read-more" href="https://www.hyperdroid.in/owncloud-personal-network-drive/" title="Read ownCloud: Your Personal Network Drive">Read more &#187;</a></p>
-<p>The post <a rel="nofollow" href="https://www.hyperdroid.in/owncloud-personal-network-drive/">ownCloud: Your Personal Network Drive</a> appeared first on <a rel="nofollow" href="https://www.hyperdroid.in">Hyperdroid</a>.</p>
+		<description><![CDATA[<p>ownCloud is a suite of client–server software for creating file hosting services and using them. ownCloud is functionally very similar to the widely used Dropbox, with the primary functional difference being that the Server Edition of ownCloud is free and open-source, and thereby allowing anyone to install and operate it without charge on a private server. PREREQUISITES Before you begin this guide, there...  <a class="excerpt-read-more" href="https://www.hyperdroid.in/owncloud-personal-network-drive/" title="Read ownCloud : Your Personal Network Drive">Read more &#187;</a></p>
+<p>The post <a rel="nofollow" href="https://www.hyperdroid.in/owncloud-personal-network-drive/">ownCloud : Your Personal Network Drive</a> appeared first on <a rel="nofollow" href="https://www.hyperdroid.in">Hyperdroid</a>.</p>
 ]]></description>
 		<wfw:commentRss>https://www.hyperdroid.in/owncloud-personal-network-drive/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
-		</item>
+	<post-id xmlns="com-wordpress:feed-additions:1">270</post-id>	</item>
 		<item>
 		<title>Setting Up Virtual Machine Using VirtualBox</title>
 		<link>https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/</link>
@@ -46,7 +46,7 @@
 ]]></description>
 		<wfw:commentRss>https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
-		</item>
+	<post-id xmlns="com-wordpress:feed-additions:1">242</post-id>	</item>
 		<item>
 		<title>SSL Certification Using Let&#8217;s Encrypt</title>
 		<link>https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/</link>
@@ -61,7 +61,7 @@
 ]]></description>
 		<wfw:commentRss>https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
-		</item>
+	<post-id xmlns="com-wordpress:feed-additions:1">201</post-id>	</item>
 		<item>
 		<title>Ubuntu 17.10 Desktop Installation</title>
 		<link>https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/</link>
@@ -76,7 +76,7 @@
 ]]></description>
 		<wfw:commentRss>https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/feed/</wfw:commentRss>
 		<slash:comments>3</slash:comments>
-		</item>
+	<post-id xmlns="com-wordpress:feed-additions:1">144</post-id>	</item>
 		<item>
 		<title>Hosting Multiple Websites On Ubuntu</title>
 		<link>https://www.hyperdroid.in/hosting-multiple-websites-on-ubuntu/</link>
@@ -91,7 +91,7 @@
 ]]></description>
 		<wfw:commentRss>https://www.hyperdroid.in/hosting-multiple-websites-on-ubuntu/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
-		</item>
+	<post-id xmlns="com-wordpress:feed-additions:1">106</post-id>	</item>
 		<item>
 		<title>Installing WordPress On Ubuntu</title>
 		<link>https://www.hyperdroid.in/installing-wordpress-on-ubuntu/</link>
@@ -106,7 +106,7 @@
 ]]></description>
 		<wfw:commentRss>https://www.hyperdroid.in/installing-wordpress-on-ubuntu/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
-		</item>
+	<post-id xmlns="com-wordpress:feed-additions:1">45</post-id>	</item>
 		<item>
 		<title>Installing h5ai on Your Web Server</title>
 		<link>https://www.hyperdroid.in/installing-h5ai-on-your-web-server/</link>
@@ -121,7 +121,7 @@
 ]]></description>
 		<wfw:commentRss>https://www.hyperdroid.in/installing-h5ai-on-your-web-server/feed/</wfw:commentRss>
 		<slash:comments>2</slash:comments>
-		</item>
+	<post-id xmlns="com-wordpress:feed-additions:1">7</post-id>	</item>
 		<item>
 		<title>How To Install LAMP (Apache2) on Ubuntu</title>
 		<link>https://www.hyperdroid.in/how-to-install-lamp-on-ubuntu/</link>
@@ -136,6 +136,6 @@
 ]]></description>
 		<wfw:commentRss>https://www.hyperdroid.in/how-to-install-lamp-on-ubuntu/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
-		</item>
+	<post-id xmlns="com-wordpress:feed-additions:1">36</post-id>	</item>
 	</channel>
 </rss>

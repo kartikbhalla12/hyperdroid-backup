@@ -2,7 +2,7 @@
 Author: Spiraclethemes 
 Requires at least: WordPress 4.5 
 Tested up to: WordPress 4.9.1
-Version: 1.0.6
+Version: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: right-sidebar,left-sidebar,custom-menu,featured-images,theme-options,blog,custom-colors,custom-logo,flexible-header,threaded-comments,one-column,full-width-template,sticky-post,translation-ready
@@ -25,7 +25,7 @@ License: Licensed under the MIT license
 http://getbootstrap.com
 
 JQuery Easing 1.3
-Copyright � 2008 George McGinley Smith
+Copyright � 2008 George McGinley Smith
 License: Open source under the BSD License
 http://gsgd.co.uk/sandbox/jquery/easing/
 
@@ -71,6 +71,11 @@ https://pixabay.com/en/woman-female-lady-hiker-adventure-2896389/
 
 == Changelog ==
 
+
+v1.0.7
+-- added logo fixes
+—- added new customizer options
+—- added new medical demo
 
 v1.0.6
 -- restaurant demo added

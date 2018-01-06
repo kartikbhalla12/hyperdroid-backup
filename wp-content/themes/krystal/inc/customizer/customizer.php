@@ -820,6 +820,69 @@ function krystal_customize_register( $wp_customize ) {
         ) )
     );
 
+    // Top menu button background color
+    $wp_customize->add_setting(
+        'kr_top_menu_button_color',
+        array(
+            'type' => 'theme_mod',
+            'default'           => '#5b9dd9',
+            'sanitize_callback' => 'sanitize_hex_color'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+        $wp_customize,
+        'kr_top_menu_button_color',
+        array(
+        'label'      => __( 'Top Menu Button Color', 'krystal' ),
+        'section'    => 'krystal_color_settings',
+        'settings'   => 'kr_top_menu_button_color',
+        ) )
+    );
+
+    // Top menu button text color
+    $wp_customize->add_setting(
+        'kr_top_menu_button_text_color',
+        array(
+            'type' => 'theme_mod',
+            'default'           => '#fff',
+            'sanitize_callback' => 'sanitize_hex_color'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+        $wp_customize,
+        'kr_top_menu_button_text_color',
+        array(
+        'label'      => __( 'Top Menu Button Text Color', 'krystal' ),
+        'section'    => 'krystal_color_settings',
+        'settings'   => 'kr_top_menu_button_text_color',
+        ) )
+    );
+
+    // Menu dropdown color
+    $wp_customize->add_setting(
+        'kr_top_menu_dd_color',
+        array(
+            'type' => 'theme_mod',
+            'default'           => '#dd3333',
+            'sanitize_callback' => 'sanitize_hex_color'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+        $wp_customize,
+        'kr_top_menu_dd_color',
+        array(
+        'label'      => __( 'Menu Dropdown Background Color', 'krystal' ),
+        'section'    => 'krystal_color_settings',
+        'settings'   => 'kr_top_menu_dd_color',
+        ) )
+    );
+
     // Home Background Image text color
     $wp_customize->add_setting(
         'kr_home_bg_image_text_color',
@@ -859,6 +922,48 @@ function krystal_customize_register( $wp_customize ) {
         'label'      => __( 'Page Background Image Text Color', 'krystal' ),
         'section'    => 'krystal_color_settings',
         'settings'   => 'kr_page_bg_image_text_color',
+        ) )
+    );
+
+    // Contact form elements color
+    $wp_customize->add_setting(
+        'kr_cf_text_color',
+        array(
+            'type' => 'theme_mod',
+            'default'           => '#555555',
+            'sanitize_callback' => 'sanitize_hex_color'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+        $wp_customize,
+        'kr_cf_text_color',
+        array(
+        'label'      => __( 'Contact Form Color', 'krystal' ),
+        'section'    => 'krystal_color_settings',
+        'settings'   => 'kr_cf_text_color',
+        ) )
+    );
+
+    // Contact form button color
+    $wp_customize->add_setting(
+        'kr_cf_button_bg_color',
+        array(
+            'type' => 'theme_mod',
+            'default'           => '#555555',
+            'sanitize_callback' => 'sanitize_hex_color'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+        $wp_customize,
+        'kr_cf_button_bg_color',
+        array(
+        'label'      => __( 'Contact Form Button Hover Color', 'krystal' ),
+        'section'    => 'krystal_color_settings',
+        'settings'   => 'kr_cf_button_bg_color',
         ) )
     );
     

@@ -148,7 +148,7 @@ function krystal_theme_info() {
 					<div class="title">
 						<h2><?php _e( 'Thank you for using Krystal Lite free WordPress theme', 'krystal' ); ?></h2>
 						<div class="title-content">
-							<p><?php _e( 'Krystal is a professional business template perfect for your blog, small business, online portfolio, construction companies and creative agencies. It is a clean and modern design bootstrap WordPress theme nicely coded for easy customization. Krystal provides a great experience and impression to your visitors with clean and elegant design. There is also a working ajax contact form in Krystal theme. Powered by most popular page builder Elementor you can easily create and edit pages. Krystal comes with 5+ unique demos and with 1 click demo import feature. Krystal is SEO friendly and mobile responsive too.', 'krystal' ); ?></p>
+							<p><?php _e( 'Krystal is a professional business template perfect for your blog, small business, online portfolio, construction companies and creative agencies. It is a clean and modern design bootstrap WordPress theme nicely coded for easy customization. Krystal provides a great experience and impression to your visitors with clean and elegant design. There is also a working ajax contact form in Krystal theme. Powered by most popular page builder Elementor you can easily create and edit pages. Krystal comes with 8+ unique demos and with 1 click demo import feature. Krystal is SEO friendly and mobile responsive too.', 'krystal' ); ?></p>
 						</div>
 					</div>
 				</div>

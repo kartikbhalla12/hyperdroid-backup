@@ -23,14 +23,24 @@ function krystal_dynamic_css_stylesheet() {
     $footer_content_color= sanitize_hex_color(get_theme_mod( 'kr_footer_content_color','#ffffff' ));   
     $footer_links_color= sanitize_hex_color(get_theme_mod( 'kr_footer_links_color','#b3b3b3' ));  
 
-    $top_menu_color= sanitize_hex_color(get_theme_mod( 'kr_top_menu_color','#ffffff' ));      
+    $top_menu_color= sanitize_hex_color(get_theme_mod( 'kr_top_menu_color','#ffffff' ));    
+    $top_menu_button_color= sanitize_hex_color(get_theme_mod( 'kr_top_menu_button_color','#5b9dd9' ));
+    $top_menu_button_text_color= sanitize_hex_color(get_theme_mod( 'kr_top_menu_button_text_color','#fff' ));
+    $top_menu_dd_color= sanitize_hex_color(get_theme_mod( 'kr_top_menu_dd_color','#dd3333' ));
+
+
     $home_bg_image_text_color= sanitize_hex_color(get_theme_mod( 'kr_home_bg_image_text_color','#ffffff' ));      
     $page_bg_image_text_color= sanitize_hex_color(get_theme_mod( 'kr_page_bg_image_text_color','#ffffff' ));      
 
     $pagetitle_hft= absint(get_theme_mod( 'kr_pagetitle_hft','150' ));       
     $pagetitle_hfb= absint(get_theme_mod( 'kr_pagetitle_hfb','125' ));       
 
-    $preloader_image=esc_url(get_theme_mod( 'kr_preloader_image' ));    
+    $preloader_image=esc_url(get_theme_mod( 'kr_preloader_image' )); 
+
+    //contact form color
+    $cf_text_color= sanitize_hex_color(get_theme_mod( 'kr_cf_text_color','#555555'));       
+    $cf_button_bg_color= sanitize_hex_color(get_theme_mod( 'kr_cf_button_bg_color','#555555'));     
+    
  
     
 
@@ -69,7 +79,6 @@ function krystal_dynamic_css_stylesheet() {
         color: #fff !important;    
     }  
 
-    .contact-section form input[type="submit"]:hover,
     #commentform input[type=submit]:hover{
         background: ' . $trans_button_hover_color . ' !important;
         border: 1px solid ' . $trans_button_hover_color . ' !important;
@@ -107,13 +116,13 @@ function krystal_dynamic_css_stylesheet() {
 
     .dropdown-menu > li > a:hover, 
     .dropdown-menu > li > a:focus{
-        background: ' . $link_color . ' !important;
+        background: ' . $top_menu_dd_color . ' !important;
     }
 
     .dropdown-menu > .active > a, 
     .dropdown-menu > .active > a:hover, 
     .dropdown-menu > .active > a:focus{
-        background: ' . $link_color . ' !important;   
+        background: ' . $top_menu_dd_color . ' !important;   
     }
 
     .pagination .nav-links .current{
@@ -155,18 +164,33 @@ function krystal_dynamic_css_stylesheet() {
         padding-bottom: ' . $pagetitle_hfb . 'px;
     }
 
-    form input[type="submit"]:hover{
-        background: ' . $trans_button_hover_color . ' !important;    
-        color: #fff !important;    
-        border: 1px solid ' . $trans_button_hover_color . ' !important;    
-    }
-
     header.menu-wrapper nav ul li a,
     header.menu-wrapper.style-2 nav ul li a,
     .site-title a, .site-title a:hover, .site-title a:focus, .site-title a:visited,
     p.site-description,
     .navbar-toggle{
         color: ' . $top_menu_color . ';      
+    }
+
+    header.menu-wrapper.fixed nav ul li a,
+    header.menu-wrapper.style-2.fixed nav ul li a{
+        color: #555;
+    }
+
+    .main-menu li.menu-button > a {
+        background-color: ' . $top_menu_button_color . ';
+        color: ' . $top_menu_button_text_color . ' !important;        
+    }
+
+    .main-menu li.menu-button > a:active,
+    .main-menu li.menu-button > a:hover {
+        background-color: ' . $top_menu_button_color . ';
+        color: ' . $top_menu_button_text_color . ' !important;
+    }
+
+    header.menu-wrapper.fixed nav ul li.menu-button a, 
+    header.menu-wrapper.style-2.fixed nav ul li.menu-button a{
+        color: ' . $top_menu_button_text_color . ' !important;   
     }
 
     .slide-bg-section h1,
@@ -187,6 +211,36 @@ function krystal_dynamic_css_stylesheet() {
     .section-title h1,
     .bread-crumb, .bread-crumb span{
         color: ' . $page_bg_image_text_color . ';            
+    }
+
+    form.wpcf7-form input,
+    form.wpcf7-form textarea,
+    form.wpcf7-form radio,
+    form.wpcf7-form checkbox{
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid ' . $cf_text_color .';
+        color: ' . $cf_text_color .';
+    }
+
+    form.wpcf7-form input::placeholder,
+    form.wpcf7-form textarea::placeholder{
+        color: ' . $cf_text_color .';   
+    }
+
+    form input[type="submit"]{
+        color: ' . $cf_text_color .';
+        border: 1px solid ' . $cf_text_color . ' !important;
+    }
+
+    form input[type="submit"]:hover{
+        background: ' . $cf_button_bg_color . ' !important;
+        color: #fff;
+        border: 1px solid ' . $cf_button_bg_color . ' !important;
+    }
+
+    form.wpcf7-form label{
+        color: ' . $cf_text_color . ';               
     }
 
 ';
