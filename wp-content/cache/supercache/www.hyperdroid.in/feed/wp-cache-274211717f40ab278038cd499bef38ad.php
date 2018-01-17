@@ -16,7 +16,7 @@
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9.1</generator>
+	<generator>https://wordpress.org/?v=4.9.2</generator>
 <site xmlns="com-wordpress:feed-additions:1">140779289</site>	<item>
 		<title>ownCloud : Your Personal Network Drive</title>
 		<link>https://www.hyperdroid.in/owncloud-personal-network-drive/</link>
