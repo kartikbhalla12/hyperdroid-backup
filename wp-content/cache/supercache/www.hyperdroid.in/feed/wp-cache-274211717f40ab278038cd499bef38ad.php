@@ -12,12 +12,29 @@
 	<atom:link href="https://www.hyperdroid.in/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.hyperdroid.in</link>
 	<description>All About Tech</description>
-	<lastBuildDate>Sat, 06 Jan 2018 04:54:13 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 17 Jan 2018 18:12:34 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.2</generator>
 <site xmlns="com-wordpress:feed-additions:1">140779289</site>	<item>
+		<title>Getting Started With Android Studio &#8211; Part I</title>
+		<link>https://www.hyperdroid.in/getting-started-android-studio-part-1/</link>
+		<comments>https://www.hyperdroid.in/getting-started-android-studio-part-1/#comments</comments>
+		<pubDate>Wed, 17 Jan 2018 14:35:10 +0000</pubDate>
+		<dc:creator><![CDATA[Kartik B.]]></dc:creator>
+				<category><![CDATA[Android Studio]]></category>
+		<category><![CDATA[First App]]></category>
+		<category><![CDATA[Installation]]></category>
+
+		<guid isPermaLink="false">https://www.hyperdroid.in/?p=354</guid>
+		<description><![CDATA[<p>Android Studio is Google&#8217;s officially supported IDE for developing Android apps. Based on IntelliJ IDEA, Android Studio is freely available under Apache License 2.0. In this guide we will be installing Android Studio in windows and setting up our first android project. &#160; MINIMUM REQUIREMENTS Microsoft Windows 7/8/10 (32-bit or 64-bit) 2 GB RAM minimum, 8 GB...  <a class="excerpt-read-more" href="https://www.hyperdroid.in/getting-started-android-studio-part-1/" title="Read Getting Started With Android Studio &#8211; Part I">Read more &#187;</a></p>
+<p>The post <a rel="nofollow" href="https://www.hyperdroid.in/getting-started-android-studio-part-1/">Getting Started With Android Studio &#8211; Part I</a> appeared first on <a rel="nofollow" href="https://www.hyperdroid.in">Hyperdroid</a>.</p>
+]]></description>
+		<wfw:commentRss>https://www.hyperdroid.in/getting-started-android-studio-part-1/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">354</post-id>	</item>
+		<item>
 		<title>ownCloud : Your Personal Network Drive</title>
 		<link>https://www.hyperdroid.in/owncloud-personal-network-drive/</link>
 		<comments>https://www.hyperdroid.in/owncloud-personal-network-drive/#respond</comments>
@@ -38,7 +55,7 @@
 		<comments>https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/#respond</comments>
 		<pubDate>Sat, 30 Dec 2017 16:47:26 +0000</pubDate>
 		<dc:creator><![CDATA[Kartik B.]]></dc:creator>
-				<category><![CDATA[Basic]]></category>
+				<category><![CDATA[Basics]]></category>
 
 		<guid isPermaLink="false">https://www.hyperdroid.in/?p=242</guid>
 		<description><![CDATA[<p>VirtualBox allows you to run more than one operating system at a time. This way, you can run software written for one operating system on another (for example, Windows software on Linux or a Mac) without having to reboot to use it. Since you can configure what kinds of &#8220;virtual&#8221; hardware should be presented to...  <a class="excerpt-read-more" href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/" title="Read Setting Up Virtual Machine Using VirtualBox">Read more &#187;</a></p>
@@ -68,7 +85,7 @@
 		<comments>https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comments</comments>
 		<pubDate>Sun, 17 Dec 2017 11:01:03 +0000</pubDate>
 		<dc:creator><![CDATA[Kartik B.]]></dc:creator>
-				<category><![CDATA[Linux Basics]]></category>
+				<category><![CDATA[Basics]]></category>
 
 		<guid isPermaLink="false">https://www.hyperdroid.in/?p=144</guid>
 		<description><![CDATA[<p>Ubuntu is an open source operating system for computers. It is a Linux distribution based on the Debian architecture.In this guide we will be learning how to install ubuntu on your PC. MINIMUM REQUIREMENTS  2 GHz dual core processor or better 2 GB system memory 25 GB of free hard drive space An USB Drive...  <a class="excerpt-read-more" href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/" title="Read Ubuntu 17.10 Desktop Installation">Read more &#187;</a></p>
