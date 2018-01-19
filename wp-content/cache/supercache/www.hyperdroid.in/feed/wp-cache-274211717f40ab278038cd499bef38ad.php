@@ -12,7 +12,7 @@
 	<atom:link href="https://www.hyperdroid.in/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.hyperdroid.in</link>
 	<description>All About Tech</description>
-	<lastBuildDate>Wed, 17 Jan 2018 18:12:34 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 18 Jan 2018 17:20:28 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -41,6 +41,8 @@
 		<pubDate>Thu, 04 Jan 2018 08:13:07 +0000</pubDate>
 		<dc:creator><![CDATA[Kartik B.]]></dc:creator>
 				<category><![CDATA[Web Hosting]]></category>
+		<category><![CDATA[owncloud]]></category>
+		<category><![CDATA[personal cloud]]></category>
 
 		<guid isPermaLink="false">https://www.hyperdroid.in/?p=270</guid>
 		<description><![CDATA[<p>ownCloud is a suite of client–server software for creating file hosting services and using them. ownCloud is functionally very similar to the widely used Dropbox, with the primary functional difference being that the Server Edition of ownCloud is free and open-source, and thereby allowing anyone to install and operate it without charge on a private server. PREREQUISITES Before you begin this guide, there...  <a class="excerpt-read-more" href="https://www.hyperdroid.in/owncloud-personal-network-drive/" title="Read ownCloud : Your Personal Network Drive">Read more &#187;</a></p>

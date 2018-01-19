@@ -757,11 +757,11 @@ body .comment .comment-author {
 }
 body .comment time a {
     text-decoration: none;
-    color: #656565;
+    color: #000 !important;
     font-size: 14px;
 }
 body .comment p {
-    color: #656565;
+    color: #000 !important;
 }
 body .comment_content {
     box-sizing: border-box;
@@ -769,6 +769,7 @@ body .comment_content {
     border: 1px solid #ddd;
     background: #F9F9F9;
     padding: 1em;
+	color: #000 !important;
 }
 body .comment:not(.depth-1) {
     padding: 0;
