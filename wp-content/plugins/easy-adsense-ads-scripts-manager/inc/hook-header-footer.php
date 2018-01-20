@@ -72,6 +72,11 @@ if ( ! function_exists( 'eaa_add_styles' ) ) {
                 box-shadow: 4px 0 4px -3px #666;
             }
 
+            @media screen and (max-width: 640px) {
+                #eaa_sticky_ad_top .eaa-ad,
+                #eaa_sticky_ad_bottom .eaa-ad {margin-right: 24px}
+            }
+
         </style>
 
 

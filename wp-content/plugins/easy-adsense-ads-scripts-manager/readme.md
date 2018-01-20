@@ -205,6 +205,20 @@ If you are using a separate theme, you shouldn't use this option.
 
 
 ## Changelog 
+
+**0.44**
+
+* Made all strings translatable.
+
+**0.43**
+
+* Add close icon to sticky ads on mobile.
+
+**0.42**
+
+* Move javascript to separate file.
+* Increase the priority of eaa scripts.
+
 **0.41**
 * Add sticky ads.
 * Update support forum links to our new forum.
