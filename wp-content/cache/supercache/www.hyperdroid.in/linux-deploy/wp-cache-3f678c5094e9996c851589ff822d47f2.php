@@ -26,19 +26,21 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Linux Deploy : Ubuntu On Android - Hyperdroid" />
-<meta property="og:description" content="Linux Deploy is an application is open source software for quick and easy installation of the operating system (OS) GNU/Linux on your Android device.The application creates a disk image on a flash card, mounts it and installs an OS distribution. Applications of the new system are run in a chroot environment and working together with...  Read more &raquo;" />
+<meta property="og:description" content="Linux Deploy is an open source software for quick and easy installation of the operating system (OS) GNU/Linux on your Android device.The application creates a disk image on a flash card, mounts it and installs an OS distribution. Applications of the new system are run in a chroot environment and works together with the Android platform....  Read more &raquo;" />
 <meta property="og:url" content="https://www.hyperdroid.in/linux-deploy/" />
 <meta property="og:site_name" content="Hyperdroid" />
 <meta property="article:tag" content="Linux Deploy" />
 <meta property="article:tag" content="Ubuntu on Android" />
-<meta property="article:section" content="Uncategorized" />
+<meta property="article:section" content="Basics" />
 <meta property="article:published_time" content="2018-01-20T13:13:08+00:00" />
+<meta property="article:modified_time" content="2018-01-20T13:40:09+00:00" />
+<meta property="og:updated_time" content="2018-01-20T13:40:09+00:00" />
 <meta property="og:image" content="https://www.hyperdroid.in/wp-content/uploads/2018/01/Untitled-2.png" />
 <meta property="og:image:secure_url" content="https://www.hyperdroid.in/wp-content/uploads/2018/01/Untitled-2.png" />
 <meta property="og:image:width" content="1920" />
 <meta property="og:image:height" content="1080" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:description" content="Linux Deploy is an application is open source software for quick and easy installation of the operating system (OS) GNU/Linux on your Android device.The application creates a disk image on a flash card, mounts it and installs an OS distribution. Applications of the new system are run in a chroot environment and working together with...  Read more &raquo;" />
+<meta name="twitter:description" content="Linux Deploy is an open source software for quick and easy installation of the operating system (OS) GNU/Linux on your Android device.The application creates a disk image on a flash card, mounts it and installs an OS distribution. Applications of the new system are run in a chroot environment and works together with the Android platform....  Read more &raquo;" />
 <meta name="twitter:title" content="Linux Deploy : Ubuntu On Android - Hyperdroid" />
 <meta name="twitter:site" content="@TheDemon1253" />
 <meta name="twitter:image" content="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2018/01/Untitled-2.png?fit=1920%2C1080&#038;ssl=1" />
@@ -192,9 +194,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 			</form></div><div id="categories-3" class="widget widget_categories"><h4 class="widgettitle">Guides</h4>		<ul>
 	<li class="cat-item cat-item-7"><a href="https://www.hyperdroid.in/category/android-studio/" >Android Studio</a> (1)
 </li>
-	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (2)
-</li>
-	<li class="cat-item cat-item-1"><a href="https://www.hyperdroid.in/category/uncategorized/" >Uncategorized</a> (1)
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (3)
 </li>
 	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a> (6)
 </li>
@@ -252,27 +252,27 @@ var related_posts_js_options = {"post_heading":"h4"};
 							</header> 						
 						<div id="blog" class="divider-posted">
 						<p class="byline vcard blog">
-		                    Posted on <time class="updated" datetime="2018-01-20" pubdate>January 20, 2018</time> by <span class="author"><a href="https://www.hyperdroid.in" title="Visit Kartik B.&#8217;s website" rel="author external">Kartik B.</a></span>		                    under <a href="https://www.hyperdroid.in/category/uncategorized/" rel="category tag">Uncategorized</a>                		</p>
+		                    Posted on <time class="updated" datetime="2018-01-20" pubdate>January 20, 2018</time> by <span class="author"><a href="https://www.hyperdroid.in" title="Visit Kartik B.&#8217;s website" rel="author external">Kartik B.</a></span>		                    under <a href="https://www.hyperdroid.in/category/basic/" rel="category tag">Basics</a>                		</p>
 
                 		</div>
 						<div id="inner-content" class="wrap cf post-content-single">
 
 													
-							<article id="post-268" class="cf post-268 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-linux-deploy tag-ubuntu-on-android" role="article">
+							<article id="post-268" class="cf post-268 post type-post status-publish format-standard has-post-thumbnail hentry category-basic tag-linux-deploy tag-ubuntu-on-android" role="article">
 								<section class="entry-content cf" itemprop="articleBody">
   
   <blockquote>
-<p style="text-align: center;"><span style="color: #000000;"><strong>Linux Deploy</strong> is an application is open source software for quick and easy installation of the operating system (OS) GNU/Linux on your Android device.The application creates a disk image on a flash card, mounts it and installs an OS distribution. Applications of the new system are run in a chroot environment and working together with the Android platform. <strong>In this guide we will be installing ubuntu on android via Linux Deploy</strong></span></p>
+<p style="text-align: center;"><span style="color: #000000;"><strong>Linux Deploy</strong> is an open source software for quick and easy installation of the operating system (OS) GNU/Linux on your Android device.The application creates a disk image on a flash card, mounts it and installs an OS distribution. Applications of the new system are run in a chroot environment and works together with the Android platform. <strong>In this guide we will be installing Ubuntu on Android via Linux Deploy</strong></span></p>
 </blockquote>
 <h2 id="prerequisites" style="text-align: center;"><span style="color: #000000;"><b>MINIMUM</b><strong> REQUIREMENTS</strong></span></h2>
 <ul style="text-align: center;">
 <li style="text-align: center;"><span style="color: #000000;">A <strong>ROOTED</strong> android phone</span></li>
 <li><span style="color: #000000;"><strong>BusyBox</strong> Installed</span></li>
-<li style="text-align: center;"><span style="color: #000000;">A ssh client like <strong>Juice SSH</strong>, you can download it from <a style="color: #000000;" href="https://play.google.com/store/apps/details?id=com.sonelli.juicessh&amp;hl=en">here</a></span></li>
+<li style="text-align: center;"><span style="color: #000000;">An SSH client like <strong>Juice SSH </strong>&#8211; download it from <a style="color: #000000;" href="https://play.google.com/store/apps/details?id=com.sonelli.juicessh&amp;hl=en">here</a></span></li>
 <li style="text-align: center;"><span style="color: #000000;"><strong>Linux Deploy</strong> &#8211; download the app from <a style="color: #000000;" href="https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy&amp;hl=en">here</a></span></li>
 </ul>
 <p>&nbsp;</p>
-<h2 style="text-align: center;"><span style="color: #000000;"><strong>STEP 1 —CONFIGURING THE LINUX DEPLOY</strong></span></h2>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>STEP 1 —CONFIGURING LINUX DEPLOY</strong></span></h2>
 <p>&nbsp;</p>
 <p style="text-align: center;"><span style="color: #000000;">Once downloaded, open the app, you will see something like shown below.</span></p>
 <p>&nbsp;</p>
@@ -282,12 +282,12 @@ var related_posts_js_options = {"post_heading":"h4"};
 <p>&nbsp;</p>
 <p style="text-align: center;"><span style="color: #000000;"><img class="aligncenter size-medium" src="https://i0.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/linux_deploy/01.png?resize=640%2C1052&#038;ssl=1" width="640" height="1052" data-recalc-dims="1" /></span></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><span style="color: #000000;">Select the <strong>Distribution</strong> you want to install and the <strong>architecture your phone supports.</strong></span></p>
-<p style="text-align: center;"><span style="color: #000000;">My device is arm64 so I will be going with the arm64 one.</span></p>
+<p style="text-align: center;"><span style="color: #000000;">Select the <strong>Distribution</strong> you want to install and the <strong>architecture of your phone.</strong></span></p>
+<p style="text-align: center;"><span style="color: #000000;">My device is<strong> arm64</strong> so I will be going with the <strong>arm64</strong> one.</span></p>
 <p>&nbsp;</p>
 <p style="text-align: center;"><span style="color: #000000;"><img class="aligncenter size-medium" src="https://i2.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/linux_deploy/02.png?resize=640%2C1045&#038;ssl=1" width="640" height="1045" data-recalc-dims="1" /></span></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><span style="color: #000000;">Change the<strong> username </strong>and <strong>password</strong> as per your needs.</span></p>
+<p style="text-align: center;"><span style="color: #000000;">Change the<strong> Username </strong>and <strong>Password</strong> as you want</span></p>
 <p>&nbsp;</p>
 <p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i0.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/linux_deploy/04.png?resize=640%2C1045&#038;ssl=1" width="640" height="1045" data-recalc-dims="1" /></span></p>
 <p>&nbsp;</p>
@@ -303,8 +303,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 <p>&nbsp;</p>
 <p style="text-align: center;"><span style="color: #000000;">Next it will ask you to to confirm installation of the distribution.<strong> Tap OK</strong> . It will take a while for downloading and installation of files</span></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><span style="color: #000000;"><img class="aligncenter size-medium" src="https://i0.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/linux_deploy/12.png?resize=640%2C1045&#038;ssl=1" width="640" height="1045" data-recalc-dims="1" /></span></p>
-<p>&nbsp;</p>
+<img class="aligncenter size-medium" src="https://i1.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/linux_deploy/13.png?resize=640%2C1052&#038;ssl=1" width="640" height="1052" data-recalc-dims="1" />
 <p style="text-align: center;"><span style="color: #000000;">when you are done, click on the <strong>start button</strong> on bottom left.</span></p>
 <p>&nbsp;</p>
 <p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i0.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/linux_deploy/12.png?resize=640%2C1045&#038;ssl=1" width="640" height="1045" data-recalc-dims="1" /></span></p>
@@ -324,7 +323,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 <p>&nbsp;</p>
 <p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i2.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/linux_deploy/07.png?resize=640%2C1049&#038;ssl=1" width="640" height="1049" data-recalc-dims="1" /></span></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><span style="color: #000000;">Click on the &#8216;<span style="font-size: 18pt;">+</span><strong>&#8216; icon</strong> at the bottom right.</span></p>
+<p style="text-align: center;"><span style="color: #000000;">Click on the &#8216;<strong><span style="font-size: 24pt;">+</span>&#8216; icon</strong> at the bottom right.</span></p>
 <p>&nbsp;</p>
 <p style="text-align: center;"><span style="color: #000000;"><img class="alignnone size-medium" src="https://i2.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/linux_deploy/08.png?resize=640%2C1042&#038;ssl=1" width="640" height="1042" data-recalc-dims="1" /></span></p>
 <p>&nbsp;</p>
@@ -354,7 +353,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 <h4 style="text-align: center;"><span style="color: #000000;"><strong>Congratulations, you have reached to the end of this guide. Hope you had fun installing with us. Subscribe here for more such guides.</strong></span></h4>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-268" class="share-twitter sd-button share-icon no-text" href="https://www.hyperdroid.in/linux-deploy/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-268" class="share-facebook sd-button share-icon no-text" href="https://www.hyperdroid.in/linux-deploy/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-268" class="share-google-plus-1 sd-button share-icon no-text" href="https://www.hyperdroid.in/linux-deploy/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-140779289-268-5a62f3197dd54' data-src='https://widgets.wp.com/likes/#blog_id=140779289&amp;post_id=268&amp;origin=www.hyperdroid.in&amp;obj_id=140779289-268-5a62f3197dd54' data-name='like-post-frame-140779289-268-5a62f3197dd54'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-268" class="share-twitter sd-button share-icon no-text" href="https://www.hyperdroid.in/linux-deploy/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-268" class="share-facebook sd-button share-icon no-text" href="https://www.hyperdroid.in/linux-deploy/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-268" class="share-google-plus-1 sd-button share-icon no-text" href="https://www.hyperdroid.in/linux-deploy/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-140779289-268-5a62f96960aac' data-src='https://widgets.wp.com/likes/#blog_id=140779289&amp;post_id=268&amp;origin=www.hyperdroid.in&amp;obj_id=140779289-268-5a62f96960aac' data-name='like-post-frame-140779289-268-5a62f96960aac'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
 <div id='jp-relatedposts' class='jp-relatedposts' >
 	<h3 class="jp-relatedposts-headline"><em>Related Guides</em></h3>
 </div><div class="clear"></div><div class="tag-links"><a href="https://www.hyperdroid.in/tag/linux-deploy/" rel="tag">Linux Deploy</a><a href="https://www.hyperdroid.in/tag/ubuntu-on-android/" rel="tag">Ubuntu on Android</a></div></section> 
@@ -378,7 +377,50 @@ var related_posts_js_options = {"post_heading":"h4"};
 				                  </div>
 				                  <div class="clear"></div>
 				                </footer> 
-				                				                                   
+				                				                    					                    <div class="related posts related-hide">
+						                    <h3>Related Posts</h3>
+						                    <ul> 
+							                    							                    
+						                            <li>
+						                              <div class="related-image">
+							                              <a href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/" rel="bookmark" title="Setting Up Virtual Machine Using VirtualBox">
+							                                							                                
+							                                <img src="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2017/12/Untitled-3.png?resize=300%2C300&amp;ssl=1" class="attachment-BIGPIX-thumb-image-300by300 size-BIGPIX-thumb-image-300by300 wp-post-image" alt="" data-attachment-id="266" data-permalink="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/untitled-3/" data-orig-file="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2017/12/Untitled-3.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-3" data-image-description="" data-medium-file="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2017/12/Untitled-3.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2017/12/Untitled-3.png?fit=640%2C360&amp;ssl=1" />							                              </a>
+						                              </div>
+
+						                              <div class="related-info">
+						                                  <h3>Setting Up Virtual Machine Using VirtualBox</h3>
+						                                  <p>VirtualBox allows you to run more than one operating system at a time. This way, you can run software written for one operating system on another (for example, Windows software on Linux or a Mac) without having to reboot to use it. Since you can configure what kinds of &#8220;virtual&#8221; hardware should be presented to&#8230;  <a class="excerpt-read-more" href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/" title="Read Setting Up Virtual Machine Using VirtualBox">Read more &raquo;</a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-242" class="share-twitter sd-button share-icon no-text" href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-242" class="share-facebook sd-button share-icon no-text" href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-242" class="share-google-plus-1 sd-button share-icon no-text" href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-140779289-242-5a62f96967a13' data-src='https://widgets.wp.com/likes/#blog_id=140779289&amp;post_id=242&amp;origin=www.hyperdroid.in&amp;obj_id=140779289-242-5a62f96967a13' data-name='like-post-frame-140779289-242-5a62f96967a13'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>						                                  <p class="byline vcard">
+						                                      Posted on <time class="updated" datetime="2017-12-30" pubdate>December 30, 2017</time> by <a href="https://www.hyperdroid.in/author/thedemon12/" title="Posts by Kartik B." rel="author">Kartik B.</a>						                                    
+						                                  </p>
+						                              </div>
+						                               
+						                            </li>
+							                    
+							                    							                    
+						                            <li>
+						                              <div class="related-image">
+							                              <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/" rel="bookmark" title="Ubuntu 17.10 Desktop Installation">
+							                                							                                
+							                                <img src="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2017/12/featured-1.jpg?resize=300%2C300&amp;ssl=1" class="attachment-BIGPIX-thumb-image-300by300 size-BIGPIX-thumb-image-300by300 wp-post-image" alt="" data-attachment-id="177" data-permalink="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/featured-4/" data-orig-file="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2017/12/featured-1.jpg?fit=2560%2C1600&amp;ssl=1" data-orig-size="2560,1600" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="featured" data-image-description="" data-medium-file="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2017/12/featured-1.jpg?fit=300%2C188&amp;ssl=1" data-large-file="https://i1.wp.com/www.hyperdroid.in/wp-content/uploads/2017/12/featured-1.jpg?fit=640%2C400&amp;ssl=1" />							                              </a>
+						                              </div>
+
+						                              <div class="related-info">
+						                                  <h3>Ubuntu 17.10 Desktop Installation</h3>
+						                                  <p>Ubuntu is an open source operating system for computers. It is a Linux distribution based on the Debian architecture.In this guide we will be learning how to install ubuntu on your PC. MINIMUM REQUIREMENTS  2 GHz dual core processor or better 2 GB system memory 25 GB of free hard drive space An USB Drive&#8230;  <a class="excerpt-read-more" href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/" title="Read Ubuntu 17.10 Desktop Installation">Read more &raquo;</a></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-144" class="share-twitter sd-button share-icon no-text" href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-144" class="share-facebook sd-button share-icon no-text" href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-144" class="share-google-plus-1 sd-button share-icon no-text" href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-140779289-144-5a62f9696dc23' data-src='https://widgets.wp.com/likes/#blog_id=140779289&amp;post_id=144&amp;origin=www.hyperdroid.in&amp;obj_id=140779289-144-5a62f9696dc23' data-name='like-post-frame-140779289-144-5a62f9696dc23'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>						                                  <p class="byline vcard">
+						                                      Posted on <time class="updated" datetime="2017-12-17" pubdate>December 17, 2017</time> by <a href="https://www.hyperdroid.in/author/thedemon12/" title="Posts by Kartik B." rel="author">Kartik B.</a>						                                    
+						                                  </p>
+						                              </div>
+						                               
+						                            </li>
+							                    
+							                    							                    <div class="clear"></div>
+						                      </ul>
+
+					                     </div>
+				                                   
 
                				
 
@@ -408,9 +450,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 			</form></div><div id="categories-3" class="widget widget_categories"><h4 class="widgettitle">Guides</h4>		<ul>
 	<li class="cat-item cat-item-7"><a href="https://www.hyperdroid.in/category/android-studio/" >Android Studio</a> (1)
 </li>
-	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (2)
-</li>
-	<li class="cat-item cat-item-1"><a href="https://www.hyperdroid.in/category/uncategorized/" >Uncategorized</a> (1)
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (3)
 </li>
 	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a> (6)
 </li>
@@ -455,9 +495,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 						<div id="categories-6" class="widget widget_categories"><h4 class="widgettitle">Categories</h4>		<ul>
 	<li class="cat-item cat-item-7"><a href="https://www.hyperdroid.in/category/android-studio/" >Android Studio</a> (1)
 </li>
-	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (2)
-</li>
-	<li class="cat-item cat-item-1"><a href="https://www.hyperdroid.in/category/uncategorized/" >Uncategorized</a> (1)
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (3)
 </li>
 	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a> (6)
 </li>
@@ -512,7 +550,7 @@ var related_posts_js_options = {"post_heading":"h4"};
 	</div>
 
 	<script type="text/javascript">
-		window.WPCOM_sharing_counts = {"https:\/\/www.hyperdroid.in\/linux-deploy\/":268};
+		window.WPCOM_sharing_counts = {"https:\/\/www.hyperdroid.in\/linux-deploy\/":268,"https:\/\/www.hyperdroid.in\/setting-virtual-machine-using-virtualbox\/":242,"https:\/\/www.hyperdroid.in\/ubuntu-17-10-desktop-installation\/":144};
 	</script>
 <link rel='stylesheet' id='wpcom-notes-admin-bar-css'  href='https://s0.wp.com/wp-content/mu-plugins/notes/admin-bar-v2.css?ver=5.7.1-201803' type='text/css' media='all' />
 <link rel='stylesheet' id='noticons-css'  href='https://s0.wp.com/i/noticons/noticons.css?ver=5.7.1-201803' type='text/css' media='all' />
@@ -660,5 +698,5 @@ var windowOpen;
 			</body>
 
 </html> <!-- end of site. what a ride! -->
-<!-- Dynamic page generated in 0.174 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2018-01-20 13:13:21 -->
+<!-- Dynamic page generated in 0.194 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-01-20 13:40:17 -->

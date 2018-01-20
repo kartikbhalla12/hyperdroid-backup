@@ -943,9 +943,6 @@ article.archive .entry-content h3 {
 }
 /*404*/
 
-.entry-content {
-	background-color : #000 !important;
-}
 .error404 .entry-content p {
     text-transform: uppercase;
     text-align: center;
