@@ -1,0 +1,623 @@
+<!doctype html>
+
+<!--[if lt IE 7]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js"><!--<![endif]-->
+
+	<head>
+		<meta charset="UTF-8" />
+
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+				<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+				<link rel="icon" href="http://35.196.242.183/wp-content/uploads/2017/12/2000px-Logo-ubuntu_cof-white_orange-hex.svg_.png">
+		
+		<link rel="pingback" href="https://www.hyperdroid.in/xmlrpc.php">
+		
+		<title>Getting Started With Android Studio - Part I - Hyperdroid</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v6.1.1 - https://yoa.st/1yg?utm_content=6.1.1 -->
+<meta name="description" content="Android Studio is Google&#039;s officially supported IDE for developing Android apps. In this guide we will be installing Android Studio in windows and setting up our first android project."/>
+<link rel="canonical" href="https://www.hyperdroid.in/getting-started-android-studio-part-1/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Getting Started With Android Studio - Part I - Hyperdroid" />
+<meta property="og:description" content="Android Studio is Google&#039;s officially supported IDE for developing Android apps. In this guide we will be installing Android Studio in windows and setting up our first android project." />
+<meta property="og:url" content="https://www.hyperdroid.in/getting-started-android-studio-part-1/" />
+<meta property="og:site_name" content="Hyperdroid" />
+<meta property="article:tag" content="Android Studio" />
+<meta property="article:tag" content="First App" />
+<meta property="article:tag" content="Installation" />
+<meta property="article:section" content="Android Studio" />
+<meta property="article:published_time" content="2018-01-17T20:05:10+00:00" />
+<meta property="article:modified_time" content="2018-01-17T23:42:34+00:00" />
+<meta property="og:updated_time" content="2018-01-17T23:42:34+00:00" />
+<meta property="og:image" content="https://www.hyperdroid.in/wp-content/uploads/2018/01/Android_Studio_icon.svg_.png" />
+<meta property="og:image:secure_url" content="https://www.hyperdroid.in/wp-content/uploads/2018/01/Android_Studio_icon.svg_.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="573" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Android Studio is Google&#039;s officially supported IDE for developing Android apps. In this guide we will be installing Android Studio in windows and setting up our first android project." />
+<meta name="twitter:title" content="Getting Started With Android Studio - Part I - Hyperdroid" />
+<meta name="twitter:site" content="@TheDemon1253" />
+<meta name="twitter:image" content="https://i2.wp.com/www.hyperdroid.in/wp-content/uploads/2018/01/Android_Studio_icon.svg_.png?fit=1024%2C573&#038;ssl=1" />
+<meta name="twitter:creator" content="@TheDemon1253" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.hyperdroid.in\/","name":"Hyperdroid","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.hyperdroid.in\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/www.hyperdroid.in\/getting-started-android-studio-part-1\/","sameAs":["https:\/\/twitter.com\/TheDemon1253"],"@id":"#person","name":"Kartik Bhalla"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Hyperdroid &raquo; Feed" href="https://www.hyperdroid.in/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hyperdroid &raquo; Comments Feed" href="https://www.hyperdroid.in/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hyperdroid &raquo; Getting Started With Android Studio &#8211; Part I Comments Feed" href="https://www.hyperdroid.in/getting-started-android-studio-part-1/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v6.2.7 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+		var disableStr = 'ga-disable-UA-89462011-6';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-89462011-6', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('require', 'linkid', 'linkid.js');
+	__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hyperdroid.in\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='BIGPIX-scroll-style-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/library/css/jquery.mCustomScrollbar.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='BIGPIX-font-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/css/font-awesome.min.css?ver=4.9.2' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='BIGPIX-ie-only-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/library/css/ie.css?ver=4.9.2' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='BIGPIX-raleway-fonts-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/fonts/fonts.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='BIGPIX-stylesheet-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/library/css/style.min.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='BIGPIX-main-stylesheet-css'  href='https://www.hyperdroid.in/wp-content/themes/big-pix/style.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='social-logos-css'  href='https://www.hyperdroid.in/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://www.hyperdroid.in/wp-content/plugins/jetpack/css/jetpack.css?ver=5.7.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?ver=20150408'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/www.hyperdroid.in","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=6.2.7'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/themes/big-pix/library/js/libs/modernizr.custom.min.js?ver=2.5.3'></script>
+<link rel='https://api.w.org/' href='https://www.hyperdroid.in/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hyperdroid.in/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.hyperdroid.in/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.2" />
+<link rel='shortlink' href='https://wp.me/p9wH7H-5I' />
+<link rel="alternate" type="application/json+oembed" href="https://www.hyperdroid.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hyperdroid.in%2Fgetting-started-android-studio-part-1%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.hyperdroid.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hyperdroid.in%2Fgetting-started-android-studio-part-1%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<link rel='dns-prefetch' href='//widgets.wp.com'/>
+<link rel='dns-prefetch' href='//s0.wp.com'/>
+<link rel='dns-prefetch' href='//0.gravatar.com'/>
+<link rel='dns-prefetch' href='//1.gravatar.com'/>
+<link rel='dns-prefetch' href='//2.gravatar.com'/>
+<link rel='dns-prefetch' href='//i0.wp.com'/>
+<link rel='dns-prefetch' href='//i1.wp.com'/>
+<link rel='dns-prefetch' href='//i2.wp.com'/>
+<style type='text/css'>img#wpstats{display:none}</style>  <style>
+      .blog-list .item .hover-ovelay:hover{background: #0a0a0a!important;}
+      body .pagination li a{color: #0a0a0a;}
+      #main-navigation,.full-top-area,footer.footer[role="contentinfo"]{background: #0a0a0a; }
+    </style>
+         <style>
+      .blog-list li .excerpt p,.blog-list .item a,.blog-list .item .date,.blog-list .item time,body .byline.blog,
+      .entry-content p,body .byline.blog a,body .info p.author-desc, body .related ul li .related-info p,body .comment time a,body .comment_content p,footer.footer[role="contentinfo"] .wp-caption p.wp-caption-text{color:#ffffff;}
+      body .pagination li:first-child{border-left: 2px solid #ffffff; }
+      body .pagination li{border: 2px solid #ffffff;}
+    </style>
+
+           <style>
+      .short-divider,body .pagination,body .divider-posted,.blue-btn, .comment-reply-link, #submit,#main-navigation .widget #wp-calendar caption, #main-navigation .wp-caption, #main-navigation button, html #main-navigation input[type="button"], #main-navigation input[type="reset"], #main-navigation input[type="submit"]
+      ,.error404 .searchform input[type="submit"],.footer-widgets .widget #wp-calendar caption,.wp-caption,#main-navigation div#close{background:#ff2121; }
+      .blog-list li .excerpt p a,.blog-list .item a[rel="author"],body .info p.author-desc a,body .related ul li a
+      ,body .comment-reply-link,.blog-list .item h2:hover,#main-navigation .widgettitle,.social-icons a .fa:hover,footer.footer[role="contentinfo"] a:hover,.entry-content p a,#main-navigation a:hover,.no-menu-widgets p{color:#ff2121;}
+      .entry-content blockquote{border-left: 3px solid #ff2121;}
+    </style>
+
+   		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({
+				google_ad_client: "ca-pub-3764796401079806",
+				enable_page_level_ads: true
+			});
+		</script>
+	</head>
+
+	<body class="post-template-default single single-post postid-354 single-format-standard" >
+
+		<div id="container">
+
+			<header class="header" role="banner">
+				<div id="inner-header" class="wrap cf">
+										<p id="logo" class="h1"><a href="https://www.hyperdroid.in/" rel="nofollow" style="width:300px;margin:0 auto;display:block;"><img src="http://35.196.242.183/wp-content/uploads/2017/12/Untitled-1.png" alt="Hyperdroid" /></a></p>
+					 					<div id="main-navigation">
+			            <div id="close"><span class="fa fa-times"></span> Close</div>
+			            <div class="clear"></div>
+			            <!-- social icons -->
+				        <div class="social-icons">
+				                   <a href="https://twitter.com/TheDemon1253" class="social-tw" title="https://twitter.com/TheDemon1253" target="_blank"><i class="fa fa-twitter"></i></a>
+             <a href="https://plus.google.com/+KartikBhalla" class="social-tw" title="https://plus.google.com/+KartikBhalla" target="_blank"><i class="fa fa-google-plus"></i></a>
+             <a href="https://www.youtube.com/channel/UCS3TDkQidab81sW_pWbDjsg" class="social-tw" title="https://www.youtube.com/channel/UCS3TDkQidab81sW_pWbDjsg" target="_blank"><i class="fa fa-youtube"></i></a>
+              <a href="mailto:kartikbhalla12@gmail.com" class="social-tw" title="kartikbhalla12@gmail.com" target="_blank"><i class="fa fa-envelope"></i> </i></a>
+  	                	</div>
+	                	<!-- social icons -->
+
+			            
+						<div id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://www.hyperdroid.in/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div><div id="categories-3" class="widget widget_categories"><h4 class="widgettitle">Guides</h4>		<ul>
+	<li class="cat-item cat-item-7"><a href="https://www.hyperdroid.in/category/android-studio/" >Android Studio</a> (1)
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (2)
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a> (6)
+</li>
+		</ul>
+</div>		<div id="recent-posts-3" class="widget widget_recent_entries">		<h4 class="widgettitle">Recent Posts</h4>		<ul>
+											<li>
+					<a href="https://www.hyperdroid.in/getting-started-android-studio-part-1/">Getting Started With Android Studio &#8211; Part I</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/owncloud-personal-network-drive/">ownCloud : Your Personal Network Drive</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/">Setting Up Virtual Machine Using VirtualBox</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/">SSL Certification Using Let&#8217;s Encrypt</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/">Ubuntu 17.10 Desktop Installation</a>
+									</li>
+					</ul>
+		</div><div id="archives-3" class="widget widget_archive"><h4 class="widgettitle">Archives</h4>		<ul>
+			<li><a href='https://www.hyperdroid.in/2018/01/'>January 2018</a>&nbsp;(2)</li>
+	<li><a href='https://www.hyperdroid.in/2017/12/'>December 2017</a>&nbsp;(7)</li>
+		</ul>
+		</div><div id="meta-3" class="widget widget_meta"><h4 class="widgettitle">Meta</h4>			<ul>
+			<li><a rel="nofollow" href="https://www.hyperdroid.in/wp-login.php?action=register">Register</a></li>			<li><a rel="nofollow" href="https://www.hyperdroid.in/wp-login.php">Log in</a></li>
+			<li><a href="https://www.hyperdroid.in/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://www.hyperdroid.in/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</div>
+												<div class="margin-bottom"></div>
+        			</div>
+					<div class="side-nav" id="push"><span class="fa fa-bars"></span></div>
+
+				</div>
+
+			</header>
+			<div id="content">
+				
+				<div id="inner-content" class=" cf">
+
+						
+													<header class="article-header full-top-area" style="background-image:url('https://www.hyperdroid.in/wp-content/uploads/2018/01/Android_Studio_icon.svg_.png');background-size:cover;background-position:center;position:relative;">
+						
+						
+								<div class="bg-overlay"></div>
+								<div class="table">
+									<div class="table-cell">
+										<h1 class="entry-title single-title" itemprop="headline">Getting Started With Android Studio &#8211; Part I</h1>
+										<div class="short-divider"></div>
+										<a class="arrow fa fa-angle-down" href="#blog"></a>
+									</div>
+								</div>
+							</header> 						
+						<div id="blog" class="divider-posted">
+						<p class="byline vcard blog">
+		                    Posted on <time class="updated" datetime="2018-01-17" pubdate>January 17, 2018</time> by <span class="author"><a href="https://www.hyperdroid.in" title="Visit Kartik B.&#8217;s website" rel="author external">Kartik B.</a></span>		                    under <a href="https://www.hyperdroid.in/category/android-studio/" rel="category tag">Android Studio</a>                		</p>
+
+                		</div>
+						<div id="inner-content" class="wrap cf post-content-single">
+
+													
+							<article id="post-354" class="cf post-354 post type-post status-publish format-standard has-post-thumbnail hentry category-android-studio tag-android-studio tag-first-app tag-installation" role="article">
+								<section class="entry-content cf" itemprop="articleBody">
+  
+  <blockquote>
+<p style="text-align: center;"><span style="color: #000000;"><strong>Android Studio</strong> is Google&#8217;s officially supported IDE for developing <strong>Android apps</strong>. Based on <strong>IntelliJ IDEA</strong>, Android Studio is freely available under Apache License 2.0. In this guide we will be <strong>installing Android Studio in windows</strong> and <strong>setting up our first android project.</strong></span></p>
+</blockquote>
+<p>&nbsp;</p>
+<h2 id="prerequisites" style="text-align: center;"><span style="color: #000000;"><b>MINIMUM</b><strong> REQUIREMENTS</strong></span></h2>
+<ul style="text-align: center;">
+<li style="text-align: center;"><span style="color: #000000;">Microsoft Windows <strong>7/8/10 (32-bit or 64-bit)</strong></span></li>
+<li style="text-align: center;"><span style="color: #000000;">2 GB RAM minimum, <strong>8 GB RAM</strong> recommended</span></li>
+<li style="text-align: center;"><span style="color: #000000;">2 GB of available disk space minimum, <strong>4 GB</strong> Recommended </span></li>
+<li style="text-align: center;"><span style="color: #000000;">1280 x 800 minimum screen resolution</span></li>
+<li style="text-align: center;"><span style="color: #000000;">JDK 8</span></li>
+</ul>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong style="color: #000000; font-size: 1.75em;">STEP 1 — DOWNLOADING THE INSTALLER</strong></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Head over to the <a style="color: #000000;" href="https://developer.android.com/studio/index.html">https://developer.android.com/studio/index.html</a> and download it from the <strong>Download Android Studio</strong> button in the page. In my case <strong>3.0.1</strong> is the latest one</span></p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>STEP 2 — THE SETUP</strong></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Open the <strong>.exe</strong> file downloaded and you will be presented with the following dialog.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i1.wp.com/raw.githubusercontent.com/TheDemon12/hyperdroid-media/master/android_studio/basic_installation/0.PNG?resize=509%2C395&#038;ssl=1" width="509" height="395" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Click <strong>Next</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i2.wp.com/raw.githubusercontent.com/TheDemon12/hyperdroid-media/master/android_studio/basic_installation/01.PNG?resize=511%2C397&#038;ssl=1" width="511" height="397" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Select the <strong>android virtual devices</strong> under the components and click<strong> next.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i1.wp.com/raw.githubusercontent.com/TheDemon12/hyperdroid-media/master/android_studio/basic_installation/02.PNG?resize=511%2C396&#038;ssl=1" width="511" height="396" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Select the <strong>installation location</strong> and click <strong>next.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i1.wp.com/raw.githubusercontent.com/TheDemon12/hyperdroid-media/master/android_studio/basic_installation/03.PNG?resize=511%2C397&#038;ssl=1" width="511" height="397" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Click <strong>Next.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i2.wp.com/raw.githubusercontent.com/TheDemon12/hyperdroid-media/master/android_studio/basic_installation/04.PNG?resize=512%2C398&#038;ssl=1" width="512" height="398" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">It will start installing the components and the android studio itself and it might take a while.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i1.wp.com/raw.githubusercontent.com/TheDemon12/hyperdroid-media/master/android_studio/basic_installation/05.PNG?resize=512%2C397&#038;ssl=1" width="512" height="397" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Once done click<strong> finish.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i2.wp.com/raw.githubusercontent.com/TheDemon12/hyperdroid-media/master/android_studio/basic_installation/06.PNG?resize=421%2C180&#038;ssl=1" width="421" height="180" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">It will ask you to import settings from any previous version, Since we are installing for the first time, select<strong> Do not import settings</strong> and click <strong>OK.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i0.wp.com/raw.githubusercontent.com/TheDemon12/hyperdroid-media/master/android_studio/basic_installation/08.PNG?resize=640%2C482&#038;ssl=1" width="640" height="482" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">It will take you to the welcome wizard. Click<strong> next</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i2.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/09.PNG?resize=640%2C480&#038;ssl=1" width="640" height="480" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Choose the type of installation for the android studio. We will be choosing the<strong> standard type</strong> here, f<strong>eel free to customize your own needs</strong>.Click <strong>Next</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i0.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/10.PNG?resize=640%2C480&#038;ssl=1" width="640" height="480" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Select the <strong>theme of your choice</strong> and click <strong>next.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i0.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/11.PNG?resize=640%2C481&#038;ssl=1" width="640" height="481" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Check the <strong>Android Virtual Device</strong> (AVD) under components and click <strong>next.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i1.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/12.PNG?resize=640%2C481&#038;ssl=1" width="640" height="481" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">The next window will show you the summary of the components and their sizes that are to be installed . Click<strong> finish</strong> to proceed.</span></p>
+<p style="text-align: center;"><strong><span style="color: #000000;">This completes the installation part of this guide.</span></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>STEP 3 — STARTING A NEW PROJECT</strong></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i2.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/14.PNG?resize=640%2C463&#038;ssl=1" width="640" height="463" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Click on <strong>Start a new Android Studio Project</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i1.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/15.PNG?resize=640%2C458&#038;ssl=1" width="640" height="458" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Enter the <strong>name of the application</strong> as you wish and the the <strong>company domain name</strong>. You should then see<strong> C:\Users\&lt;USER&gt;\AndroidStudioProjects\&lt;APPLICATION NAME&gt;</strong> as the project location. Click <strong>Next.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i0.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/16.PNG?resize=640%2C457&#038;ssl=1" width="640" height="457" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Select the <strong>minimum version of android you want your app to support for</strong>. If you want your app to support other platforms like <strong>Android wear </strong>or <strong>TV,</strong> select them too. Click<strong> next</strong> when you are done.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i1.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/17.PNG?resize=640%2C455&#038;ssl=1" width="640" height="455" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">As of now select the activity as as<strong> Empty Activity </strong>and click <strong>next.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i0.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/18.PNG?resize=640%2C454&#038;ssl=1" width="640" height="454" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Next up, it will start installing the required components. once done, click <strong>next.</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i1.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/19.PNG?resize=640%2C457&#038;ssl=1" width="640" height="457" data-recalc-dims="1" /></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">Select the <strong>C++ standard </strong>and click <strong>next</strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;"><img class="size-medium aligncenter" src="https://i2.wp.com/github.com/TheDemon12/hyperdroid-media/raw/master/android_studio/basic_installation/20.PNG?resize=640%2C328&#038;ssl=1" width="640" height="328" data-recalc-dims="1" /></span></p>
+<h2></h2>
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><span style="color: #000000;"><strong>CONCLUSION</strong></span></h2>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #000000;">You&#8217;ve successfully installed and configured Android Studio and created a project for your first Android Studio mobile app. Now you&#8217;re ready to build your Android application. In next guide we will see the basic components of android studio and work with them. </span></p>
+<h4 style="text-align: center;"><span style="color: #000000;"><strong>Congratulations, you have reached to the end of this guide. Hope you had fun installing with us. Subscribe here for more such guides.</strong></span></h4>
+<div class="sharedaddy sd-sharing-enabled"></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-354" class="share-twitter sd-button share-icon no-text" href="https://www.hyperdroid.in/getting-started-android-studio-part-1/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-354" class="share-facebook sd-button share-icon no-text" href="https://www.hyperdroid.in/getting-started-android-studio-part-1/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-354" class="share-google-plus-1 sd-button share-icon no-text" href="https://www.hyperdroid.in/getting-started-android-studio-part-1/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-140779289-354-5a62ec8bf38f4' data-src='https://widgets.wp.com/likes/#blog_id=140779289&amp;post_id=354&amp;origin=www.hyperdroid.in&amp;obj_id=140779289-354-5a62ec8bf38f4' data-name='like-post-frame-140779289-354-5a62ec8bf38f4'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related Guides</em></h3>
+</div><div class="clear"></div><div class="tag-links"><a href="https://www.hyperdroid.in/tag/android-studio/" rel="tag">Android Studio</a><a href="https://www.hyperdroid.in/tag/first-app/" rel="tag">First App</a><a href="https://www.hyperdroid.in/tag/installation/" rel="tag">Installation</a></div></section> 
+								
+				                
+				                <!-- next/prev posts area -->
+								<div class="next-prev-post">
+									<div class="prev">
+										<span>PREVIOUS POST</span> &larr; <a href="https://www.hyperdroid.in/owncloud-personal-network-drive/" rel="prev">ownCloud : Your Personal Network Drive</a>									</div>
+									<div class="next">
+																			</div>
+									<div class="clear"></div>
+								</div> <!-- next-prev-post -->
+
+				                <footer class="article-footer ">
+				                  <div class="avatar">
+				                  	<img alt='' src='https://secure.gravatar.com/avatar/98767f2f56c91ee425e994ce6e737940?s=150&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/98767f2f56c91ee425e994ce6e737940?s=300&#038;d=retro&#038;r=g 2x' class='avatar avatar-150 photo' height='150' width='150' />				                  </div>
+				                  <div class="info">
+					                  <p class="author"><span>Written by</span> Kartik B.</p>
+					                  <p class="author-desc">  </p>
+				                  </div>
+				                  <div class="clear"></div>
+				                </footer> 
+				                				                                   
+
+               				
+
+  
+    <h3 id="comments-title" class="h2"><span>1</span> Comment</h3>
+
+    <section class="commentlist">
+        <div id="comment-14" class="comment byuser comment-author-sakshamb99 even thread-even depth-1 cf">
+    <article  class="cf">
+      <header class="comment-author vcard">
+                                <img data-gravatar="//www.gravatar.com/avatar/893cf19013011b6d536552f476412bdc?s=100" class="load-gravatar avatar avatar-48 photo" height="100" width="100" src="https://www.hyperdroid.in/wp-content/themes/big-pix/library/images/nothing.gif" />
+              </header>
+            <section class="comment_content cf">
+        <cite class="fn">saksham bhardwaj</cite>         <br>
+        <time datetime="2018-01-18"><a href="https://www.hyperdroid.in/getting-started-android-studio-part-1/#comment-14">January 18th, 2018 </a></time>
+        <p>Thanks kartik.</p>
+        <a rel='nofollow' class='comment-reply-link' href='https://www.hyperdroid.in/getting-started-android-studio-part-1/?replytocom=14#respond' onclick='return addComment.moveForm( "comment-14", "14", "respond", "354" )' aria-label='Reply to saksham bhardwaj'>Reply</a>      </section>
+    </article>
+  </div><!-- #comment-## -->
+    </section>
+
+    
+    
+  
+  	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/getting-started-android-studio-part-1/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.hyperdroid.in/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='354' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p>			</form>
+			</div><!-- #respond -->
+	
+         					</article> 						
+						
+					</div>
+					
+
+					<!--<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
+
+	
+		<div id="search-3" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://www.hyperdroid.in/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div><div id="categories-3" class="widget widget_categories"><h4 class="widgettitle">Guides</h4>		<ul>
+	<li class="cat-item cat-item-7"><a href="https://www.hyperdroid.in/category/android-studio/" >Android Studio</a> (1)
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (2)
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a> (6)
+</li>
+		</ul>
+</div>		<div id="recent-posts-3" class="widget widget_recent_entries">		<h4 class="widgettitle">Recent Posts</h4>		<ul>
+											<li>
+					<a href="https://www.hyperdroid.in/getting-started-android-studio-part-1/">Getting Started With Android Studio &#8211; Part I</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/owncloud-personal-network-drive/">ownCloud : Your Personal Network Drive</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/">Setting Up Virtual Machine Using VirtualBox</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/">SSL Certification Using Let&#8217;s Encrypt</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/">Ubuntu 17.10 Desktop Installation</a>
+									</li>
+					</ul>
+		</div><div id="archives-3" class="widget widget_archive"><h4 class="widgettitle">Archives</h4>		<ul>
+			<li><a href='https://www.hyperdroid.in/2018/01/'>January 2018</a>&nbsp;(2)</li>
+	<li><a href='https://www.hyperdroid.in/2017/12/'>December 2017</a>&nbsp;(7)</li>
+		</ul>
+		</div><div id="meta-3" class="widget widget_meta"><h4 class="widgettitle">Meta</h4>			<ul>
+			<li><a rel="nofollow" href="https://www.hyperdroid.in/wp-login.php?action=register">Register</a></li>			<li><a rel="nofollow" href="https://www.hyperdroid.in/wp-login.php">Log in</a></li>
+			<li><a href="https://www.hyperdroid.in/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://www.hyperdroid.in/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</div>
+	
+</div>-->
+
+				</div>
+
+			</div>
+
+			<footer class="footer" role="contentinfo">
+									<div class="footer-widgets wrap">
+
+						<div id="categories-6" class="widget widget_categories"><h4 class="widgettitle">Categories</h4>		<ul>
+	<li class="cat-item cat-item-7"><a href="https://www.hyperdroid.in/category/android-studio/" >Android Studio</a> (1)
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.hyperdroid.in/category/basic/" >Basics</a> (2)
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.hyperdroid.in/category/web-hosting/" >Web Hosting</a> (6)
+</li>
+		</ul>
+</div><div id="archives-7" class="widget widget_archive"><h4 class="widgettitle">Archives</h4>		<ul>
+			<li><a href='https://www.hyperdroid.in/2018/01/'>January 2018</a>&nbsp;(2)</li>
+	<li><a href='https://www.hyperdroid.in/2017/12/'>December 2017</a>&nbsp;(7)</li>
+		</ul>
+		</div>		<div id="recent-posts-6" class="widget widget_recent_entries">		<h4 class="widgettitle">Recent Posts</h4>		<ul>
+											<li>
+					<a href="https://www.hyperdroid.in/getting-started-android-studio-part-1/">Getting Started With Android Studio &#8211; Part I</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/owncloud-personal-network-drive/">ownCloud : Your Personal Network Drive</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/setting-virtual-machine-using-virtualbox/">Setting Up Virtual Machine Using VirtualBox</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ssl-certification-using-lets-encrypt/">SSL Certification Using Let&#8217;s Encrypt</a>
+									</li>
+											<li>
+					<a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/">Ubuntu 17.10 Desktop Installation</a>
+									</li>
+					</ul>
+		</div><div id="recent-comments-3" class="widget widget_recent_comments"><h4 class="widgettitle">Recent Comments</h4><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">saksham bhardwaj</span> on <a href="https://www.hyperdroid.in/getting-started-android-studio-part-1/#comment-14">Getting Started With Android Studio &#8211; Part I</a></li><li class="recentcomments"><span class="comment-author-link">Sushant</span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-10">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link">Jagrav</span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-9">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://akhilnarang.me' rel='external nofollow' class='url'>Akhil Narang</a></span> on <a href="https://www.hyperdroid.in/ubuntu-17-10-desktop-installation/#comment-8">Ubuntu 17.10 Desktop Installation</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.hyperdroid.in' rel='external nofollow' class='url'>Kartik B.</a></span> on <a href="https://www.hyperdroid.in/installing-h5ai-on-your-web-server/#comment-5">Installing h5ai on Your Web Server</a></li></ul></div>		
+					<div class="clear"></div>
+					</div>
+								<div id="inner-footer" class="wrap cf">
+
+					<div class="social-icons footer-social">
+		           			       <a href="https://twitter.com/TheDemon1253" class="social-tw" title="https://twitter.com/TheDemon1253" target="_blank"><i class="fa fa-twitter"></i></a>
+             <a href="https://plus.google.com/+KartikBhalla" class="social-tw" title="https://plus.google.com/+KartikBhalla" target="_blank"><i class="fa fa-google-plus"></i></a>
+             <a href="https://www.youtube.com/channel/UCS3TDkQidab81sW_pWbDjsg" class="social-tw" title="https://www.youtube.com/channel/UCS3TDkQidab81sW_pWbDjsg" target="_blank"><i class="fa fa-youtube"></i></a>
+              <a href="mailto:kartikbhalla12@gmail.com" class="social-tw" title="kartikbhalla12@gmail.com" target="_blank"><i class="fa fa-envelope"></i> </i></a>
+                  	</div> <!-- social-icons-->
+
+					<p class="source-org copyright">
+						 &#169; 2018 Hyperdroid 
+						
+					</p>
+
+				</div>
+
+			</footer>
+
+		</div>
+
+			<div style="display:none">
+	<div class="grofile-hash-map-98767f2f56c91ee425e994ce6e737940">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.hyperdroid.in\/getting-started-android-studio-part-1\/":354};
+	</script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/jetpack/_inc/build/photon/photon.min.js?ver=20130122'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201803'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2018Janaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-includes/js/comment-reply.min.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/themes/big-pix/library/js/jquery.mCustomScrollbar.concat.min.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/themes/big-pix/library/js/scripts.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-includes/js/wp-embed.min.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/jetpack/_inc/build/postmessage.min.js?ver=5.7.1'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/jetpack/_inc/build/jquery.jetpack-resize.min.js?ver=5.7.1'></script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/jetpack/_inc/build/likes/queuehandler.min.js?ver=5.7.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hyperdroid.in/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=5.7.1'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-google-plus-1', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=20171126#ver=20171126' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+	<script type='text/javascript' src='https://stats.wp.com/e-201803.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.7.1',blog:'140779289',post:'354',tz:'5.5',srv:'www.hyperdroid.in'} ]);
+	_stq.push([ 'clickTrackerInit', '140779289', '354' ]);
+</script>
+	</body>
+
+</html> <!-- end of site. what a ride! -->
+<!-- Dynamic page generated in 0.075 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-01-20 12:45:24 -->
+
+<!-- super cache -->

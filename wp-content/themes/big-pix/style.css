@@ -229,7 +229,7 @@ html #main-navigation input[type="button"],
 #main-navigation input[type="reset"],
 #main-navigation input[type="submit"] {
     background: #FCFF00;
-    color: #656565;
+	color: #656565;
 }
 #main-navigation .widget #wp-calendar thead {
     border: 1px solid #fff;
@@ -943,6 +943,9 @@ article.archive .entry-content h3 {
 }
 /*404*/
 
+.entry-content {
+	background-color : #000 !important;
+}
 .error404 .entry-content p {
     text-transform: uppercase;
     text-align: center;
@@ -1545,8 +1548,9 @@ html.no-csstransforms .slide-copy-wrap {
         margin: 10px 0;
     }
     .search-bar input.search-field[type="search"] {
-        background: url("images/search-3.png") no-repeat scroll 5px center / 20px auto rgba(0, 0, 0, 0);
+          background: url("images/search-3.png") no-repeat scroll 5px center / 20px auto rgba(0, 0, 0, 0);
     }
+  
     .search-bar {
         padding: 0;
     }

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 			<div id="content">
-				<div id="inner-content" class="cf">
+				<div id="inner-content" class="cf" style="background-color :#000 !important;">
 				<header class="article-header full-top-area">
 					<div class="bg-overlay"></div>
 							<div class="table">
@@ -13,7 +13,8 @@
 							</div>
 								
 				</header>
-				<div id="inner-content" class="wrap cf post-content-single">
+					
+					<div id="inner-content" class="wrap cf post-content-single"  >
 					
 					
 
@@ -24,11 +25,11 @@
 
 								<p><?php _e( 'The article you were looking for was not found. You may want to check your link or perhaps that page does not exist anymore.', 'BIGPIX' ); ?></p>
 
-							</section>
+						</section>
 
 							<section class="search">
 
-									<p><?php get_search_form(); ?></p>
+									<p ><?php get_search_form(); ?></p>
 
 							</section>
 
@@ -36,7 +37,6 @@
 
 					</div>
 
-				
 
 			</div>
 		</div>
