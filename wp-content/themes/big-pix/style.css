@@ -1671,3 +1671,6 @@ html.no-csstransforms .slide-copy-wrap {
         width: 100%;
     }
 }
+.pagination .current {
+	color :white !important;
+}
