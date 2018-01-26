@@ -229,7 +229,7 @@ html #main-navigation input[type="button"],
 #main-navigation input[type="reset"],
 #main-navigation input[type="submit"] {
     background: #FCFF00;
-	color: #656565;
+	color: #fff;
 }
 #main-navigation .widget #wp-calendar thead {
     border: 1px solid #fff;
@@ -1673,4 +1673,7 @@ html.no-csstransforms .slide-copy-wrap {
 }
 .pagination .current {
 	color :white !important;
+}
+#submit, .blue-btn, .comment-reply-link {
+	    color: #fff !important;
 }
