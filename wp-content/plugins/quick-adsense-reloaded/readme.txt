@@ -10,7 +10,7 @@ Tags: adsense, ads, ad, google adsense, advertising, amp, ad injection, ad inser
 Requires at least: 3.6+
 Tested up to: 4.9
 Requires PHP: 5.3
-Stable tag: 1.7.4
+Stable tag: 1.7.6
 
 Quick Adsense Reloaded! Quickest way to insert Google AdSense & other ads into your website. Google AdSense integration with Google AMP support
 
@@ -129,6 +129,18 @@ Alternative Installation:
 
 
 == Changelog == 
+
+= 1.7.6 =
+* Fix: remove debug vars
+
+= 1.7.5 =
+* Fix: Disable ads on infinite scrolling pages
+* Fix: Condition ad before last paragraph is not workingFix: Disable ads on infinite scrolling pages
+* Fix: Do not inject ads into blockquote elements
+* Fix: ads.txt not writeable admin notice is showing incorrect google adsense publisherId
+* Fix: WP QUADS Pro not working if valid license key expired
+* Tweak: Rename ADSENSE CODE to Ad Code
+* Tweak: default load priority is 10
 
 = 1.7.4 =
 * New: Option to explicetely allow wp quads to create the ads.txt
