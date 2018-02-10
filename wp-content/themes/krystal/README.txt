@@ -1,8 +1,8 @@
 === Krystal===
 Author: Spiraclethemes 
 Requires at least: WordPress 4.5 
-Tested up to: WordPress 4.9.1
-Version: 1.0.7
+Tested up to: WordPress 4.9.2
+Version: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: right-sidebar,left-sidebar,custom-menu,featured-images,theme-options,blog,custom-colors,custom-logo,flexible-header,threaded-comments,one-column,full-width-template,sticky-post,translation-ready
@@ -66,11 +66,15 @@ http://dimsemenov.com/plugins/magnific-popup/
 
 Image Credit used in Screenshot & header background
 https://pixabay.com/en/girl-forest-road-little-girl-1246690/
-https://pixabay.com/en/woman-female-lady-hiker-adventure-2896389/
+
 
 
 == Changelog ==
 
+v1.0.8
+-- code fixes
+—- contact form dropdown fixes
+—- blog post gap fix in mobile responsive devices
 
 v1.0.7
 -- added logo fixes

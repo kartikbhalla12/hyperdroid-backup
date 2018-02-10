@@ -1626,3 +1626,16 @@ input[type="checkbox"],input[type="checkbox"]:hover{
 .main-menu li.menu-button > a {
     position: relative;
 }
+
+select{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: #000;
+    height: 50px;
+    padding: 0px 10px 0 20px;
+    width: 100%;
+    font-weight: 400;
+    padding-left: 10px;
+}
+

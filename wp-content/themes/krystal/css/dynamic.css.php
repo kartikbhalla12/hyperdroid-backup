@@ -216,11 +216,16 @@ function krystal_dynamic_css_stylesheet() {
     form.wpcf7-form input,
     form.wpcf7-form textarea,
     form.wpcf7-form radio,
-    form.wpcf7-form checkbox{
+    form.wpcf7-form checkbox,
+    form.wpcf7-form select{
         background: transparent;
         border: none;
         border-bottom: 1px solid ' . $cf_text_color .';
         color: ' . $cf_text_color .';
+    }
+
+    form.wpcf7-form select{
+        padding-left: 20px;
     }
 
     form.wpcf7-form input::placeholder,

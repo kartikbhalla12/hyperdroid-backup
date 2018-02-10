@@ -780,7 +780,7 @@ msgstr ""
 msgid "Search for:"
 msgstr ""
 
-#: searchform.php:3, searchform.php:5, template-parts/searchform-fullscreen.php:19, woocommerce/product-searchform.php:28, woocommerce/product-searchform.php:30
+#: searchform.php:3, searchform.php:5, template-parts/searchform-fullscreen.php:19, woocommerce/product-searchform.php:30
 msgid "Search"
 msgstr ""
 
@@ -854,6 +854,15 @@ msgstr ""
 
 #: woocommerce/functions.php:165
 msgid "Dismiss"
+msgstr ""
+
+#: woocommerce/product-searchform.php:28
+msgid "Search products&hellip;"
+msgstr ""
+
+#: woocommerce/product-searchform.php:29
+msgctxt "submit button"
+msgid "Search"
 msgstr ""
 
 #: woocommerce/single-product/review-meta.php:28

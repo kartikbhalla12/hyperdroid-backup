@@ -313,7 +313,7 @@ function krystal_customize_register( $wp_customize ) {
         'kr_blog_homepage',
         array(
             'type' => 'theme_mod',
-            'default'           => true,
+            'default'           => false,
             'sanitize_callback' => 'krystal_sanitize_checkbox_selection'
         )
     );

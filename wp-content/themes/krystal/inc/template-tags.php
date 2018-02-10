@@ -129,7 +129,6 @@ if ( ! function_exists( 'krystal_the_custom_logo' ) ) :
  *
  * Does nothing if the custom logo is not available.
  *
- * @since Twenty Sixteen 1.2
  */
 function krystal_the_custom_logo() {
 	if ( function_exists( 'the_custom_logo' ) ) {

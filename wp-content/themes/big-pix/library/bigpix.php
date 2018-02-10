@@ -195,8 +195,8 @@ function BIGPIX_page_navi() {
     'format'       => '',
     'current'      => max( 1, get_query_var('paged') ),
     'total'        => $wp_query->max_num_pages,
-    'prev_text'    => '<i class="fa fa-chevron-left"></i>',
-    'next_text'    => '<i class="fa fa-chevron-right"></i>',
+    'prev_text'    => '<i class="fa fa-angle-double-left"></i>',
+    'next_text'    => '<i class="fa fa-angle-double-right"></i>',
     'type'         => 'list',
     'end_size'     => 3,
     'mid_size'     => 3

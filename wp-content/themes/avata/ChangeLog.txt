@@ -2,6 +2,19 @@
 
 == CHANGE LOG == 
 
+= Version 1.4.9 = = 08/02/2018
+* Fix - Fixed  "Menu Font Color" option issue
+* Optimized Section Team
+
+= Version 1.4.8 = = 30/01/2018
+* Add - Added allow html tags
+
+= Version 1.4.7 = = 28/01/2018
+* Add - Added section - Counter
+
+= Version 1.4.6 = = 27/01/2018
+* Do shortcode for section subtitle & description
+
 = Version 1.4.5 = = 24/01/2018
 * Update Bootstrap
 
