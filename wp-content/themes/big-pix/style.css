@@ -794,7 +794,7 @@ body .comment-reply-link {
     margin: 10px 0;
     background: none;
     float: none;
-    color: #ebeb53;
+    color: #000 !important;
     font-family: 'Raleway-Bold', sans-serif, arial;
     padding: 0;
 }
