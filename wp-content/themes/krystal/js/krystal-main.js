@@ -8,8 +8,7 @@
 
     $('.navbar-toggle').on('click', function () {
         if(!$('header').hasClass('fixed')) {           
-          $('#logo-alt').css({'display': 'block'});
-          $('a.custom-logo-link').css({'display': 'none'});  
+          /* navbar toggle click */ 
         }              
     });  
 

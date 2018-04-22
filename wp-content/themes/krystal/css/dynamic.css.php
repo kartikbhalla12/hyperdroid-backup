@@ -51,6 +51,7 @@ function krystal_dynamic_css_stylesheet() {
     a{        
         color: ' . $link_color . '; 
         transition: all 0.3s ease-in-out; 
+        vertical-align: top;
     }
 
     a:hover,a:focus{
@@ -285,7 +286,7 @@ if(true===get_theme_mod( 'kr_page_dark_overlay',false)) {
     ';  
 }
 
-if(true===get_theme_mod( 'kr_blog_homepage',true)) {
+if(true===get_theme_mod( 'kr_blog_homepage',false)) {
     $css .='        
          #parallax-bg #slider-inner{
            height: 70vh;

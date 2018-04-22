@@ -89,7 +89,7 @@
 @media only screen and (max-width: 767px) {    
 
     header .custom-logo-link img{
-        height: 50px;
+        max-height: 50px;
         margin-top: 10px !important;
     } 
 

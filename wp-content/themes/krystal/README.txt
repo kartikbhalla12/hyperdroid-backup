@@ -1,14 +1,15 @@
 === Krystal===
 Author: Spiraclethemes 
 Requires at least: WordPress 4.5 
-Tested up to: WordPress 4.9.2
-Version: 1.0.8
+Tested up to: WordPress 4.9.4
+Version: 1.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: right-sidebar,left-sidebar,custom-menu,featured-images,theme-options,blog,custom-colors,custom-logo,flexible-header,threaded-comments,one-column,full-width-template,sticky-post,translation-ready
 
 == Description ==
-Krystal is a WordPress theme built for most popular drag and drop page builder Elementor. Krystal comes with 7+ unique demos and with 1 click demo import feature. Krystal is SEO friendly, mobile responsive, translation ready theme and is compatible with most of the popular plugins. More information about Krystal theme is here : https://www.spiraclethemes.com/krystal-free-wordpress-theme/ , One Page Demo: https://www.spiraclethemes.com/wordpress-themes/krystal/demo1/ , Multipage Demo: https://www.spiraclethemes.com/wordpress-themes/krystal/demo2/ , Blog Demo: https://www.spiraclethemes.com/wordpress-themes/krystal/demo3/ , Minimal Demo: https://www.spiraclethemes.com/wordpress-themes/krystal/demo4/ , Construction Demo: https://www.spiraclethemes.com/wordpress-themes/krystal/demo5/,  Agency Demo: https://www.spiraclethemes.com/wordpress-themes/krystal/demo6/, Restaurant Demo: https://www.spiraclethemes.com/wordpress-themes/krystal/demo7/, We also provide support to the free version.
+Krystal is a WordPress theme built for most popular drag and drop page builder Elementor. Krystal comes with 8+ unique demos and with 1 click demo import feature. Krystal is SEO friendly, mobile responsive, translation ready theme and is compatible with most of the popular plugins. We also provide support to the free version. More information about theme is here : https://www.spiraclethemes.com/krystal-free-wordpress-theme/ 
+
 == Important Note ==
 Krystal theme supports menu level on depth 3 only.
 
@@ -65,11 +66,19 @@ License: MIT
 http://dimsemenov.com/plugins/magnific-popup/
 
 Image Credit used in Screenshot & header background
-https://pixabay.com/en/girl-forest-road-little-girl-1246690/
+https://www.pexels.com/photo/person-taking-photo-of-tower-861093/
 
 
 
 == Changelog ==
+
+v1.0.10
+-- Site Title alignment
+—- css fixes
+
+v1.0.9
+-- Mobile Logo on toggle click fix
+—- added css styles
 
 v1.0.8
 -- code fixes

@@ -9,7 +9,7 @@
  * @license GPL 2.0
  */
 
-define( 'SITEORIGIN_THEME_VERSION', '1.2.6' );
+define( 'SITEORIGIN_THEME_VERSION', '1.2.13' );
 define( 'SITEORIGIN_THEME_JS_PREFIX', '.min' );
 define( 'SITEORIGIN_THEME_CSS_PREFIX', '.min' );
 
@@ -20,6 +20,7 @@ require get_template_directory() . '/inc/siteorigin-panels.php';
 require get_template_directory() . '/inc/settings/settings.php';
 require get_template_directory() . '/inc/settings.php';
 require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/inc/deprecated.php';
 
 if ( ! function_exists( 'siteorigin_unwind_setup' ) ) :
 /**
@@ -141,7 +142,7 @@ if ( function_exists( 'is_woocommerce' ) ) {
  * @global int $content_width
  */
 function siteorigin_unwind_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'siteorigin_uwnind_content_width', 1140 );
+	$GLOBALS['content_width'] = apply_filters( 'siteorigin_unwind_content_width', 1140 );
 }
 add_action( 'after_setup_theme', 'siteorigin_unwind_content_width', 0 );
 
@@ -227,7 +228,7 @@ function siteorigin_unwind_scripts() {
 	wp_enqueue_script( 'siteorigin-unwind-script', get_template_directory_uri() . '/js/unwind' . SITEORIGIN_THEME_JS_PREFIX . '.js', array( 'jquery' ), SITEORIGIN_THEME_VERSION, true );
 
 	// Skip link focus fix.
-	wp_enqueue_script( 'siteorigin-unwind-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'siteorigin-unwind-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . SITEORIGIN_THEME_JS_PREFIX . '.js', array(), '20130115', true );
 
 	// Comment reply.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
