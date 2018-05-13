@@ -956,7 +956,7 @@ article.archive .entry-content h3 {
 }
 .error404 .searchform input[type="submit"] {
     background: #FCFF00;
-    color: #656565;
+    color: #fff;
     margin-left: 10px;
 }
 .error404 #post-not-found {
