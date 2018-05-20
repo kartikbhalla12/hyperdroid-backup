@@ -1677,3 +1677,7 @@ html.no-csstransforms .slide-copy-wrap {
 #submit, .blue-btn, .comment-reply-link {
 	    color: #fff !important;
 }
+
+.entry-content pre {
+	word-wrap: break-word !important;
+}

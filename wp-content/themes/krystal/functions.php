@@ -64,6 +64,9 @@ function krystal_setup() {
 		'caption',
 	) );
 
+	// Gallery post format
+	add_theme_support( 'post-formats', array( 'gallery' ));
+
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 

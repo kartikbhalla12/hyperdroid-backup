@@ -27,6 +27,27 @@ function krystal_customize_register( $wp_customize ) {
         )
     );
 
+    // Enable/disable section
+    $wp_customize->add_setting(
+        'kr_home_disable_section',
+        array(
+            'type' => 'theme_mod',
+            'default'           => false,
+            'sanitize_callback' => 'krystal_sanitize_checkbox_selection'
+        )
+    );
+
+    $wp_customize->add_control(
+        'kr_home_disable_section',
+        array(
+            'settings'      => 'kr_home_disable_section',
+            'section'       => 'krystal_general_settings',
+            'type'          => 'checkbox',
+            'label'         => __( 'Disable Home Background Image Section:', 'krystal' ),
+            'description'   => __( 'Choose whether to show this section in Home Page or not', 'krystal' ),           
+        )
+    );
+
     // Background selection
     $wp_customize->add_setting(
         'kr_home_bg_radio',

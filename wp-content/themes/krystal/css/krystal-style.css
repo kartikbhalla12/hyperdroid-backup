@@ -1640,3 +1640,61 @@ select{
     padding-left: 10px;
 }
 
+
+/**
+====================================================================
+  Gallery Post
+====================================================================
+*/
+
+.gallery-caption {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.gallery-columns-2 .gallery-item{
+    display: inline-block;
+    width: 50%;
+    padding: 5px 5px;
+}
+
+.single .gallery-columns-2 .gallery-item{
+    display: inline-block;
+    width: 50%;
+    padding: 10px 10px;
+}
+
+.gallery-columns-3 .gallery-item{
+    display: inline-block;
+    width: 32%;
+    padding: 5px 5px;
+}
+
+.single .gallery-columns-3 .gallery-item{
+    display: inline-block;
+    width: 32%;
+    padding: 10px 10px;
+}
+
+.gallery-columns-4 .gallery-item{
+    display: inline-block;
+    width: 25%;
+    padding: 5px 5px;
+}
+
+.single .gallery-columns-4 .gallery-item{
+    display: inline-block;
+    width: 25%;
+    padding: 10px 10px;
+}
+
+.gallery-item img {
+    width: 150px;
+    border-radius: 4px;
+}
+
+.single .gallery-item img {
+    width: 100%;
+    border-radius: 4px;
+} 
+

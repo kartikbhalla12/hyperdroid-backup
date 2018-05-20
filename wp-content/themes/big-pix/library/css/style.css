@@ -1552,7 +1552,8 @@ POSTS & CONTENT STYLES
     font-size: 0.9em;
     padding: 1.5em;
     margin: 0 0 1.5em;
-    border-radius: 3px; }
+    border-radius: 3px;
+    word-wrap: break-word; }
 
 /* end .entry-content */
 body .wp-smiley{max-height: 1rem;width: auto!important;}

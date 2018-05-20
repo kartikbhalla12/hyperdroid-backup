@@ -844,11 +844,11 @@ msgstr ""
 msgid "Your order"
 msgstr ""
 
-#: woocommerce/functions.php:162
+#: woocommerce/functions.php:183
 msgid "This is a demo store for testing purposes &mdash; no orders shall be fulfilled."
 msgstr ""
 
-#: woocommerce/functions.php:165
+#: woocommerce/functions.php:186
 msgid "Dismiss"
 msgstr ""
 

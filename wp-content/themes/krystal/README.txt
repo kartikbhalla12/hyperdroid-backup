@@ -1,8 +1,8 @@
 === Krystal===
 Author: Spiraclethemes 
 Requires at least: WordPress 4.5 
-Tested up to: WordPress 4.9.4
-Version: 1.0.10
+Tested up to: WordPress 4.9.5
+Version: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: right-sidebar,left-sidebar,custom-menu,featured-images,theme-options,blog,custom-colors,custom-logo,flexible-header,threaded-comments,one-column,full-width-template,sticky-post,translation-ready
@@ -71,6 +71,11 @@ https://www.pexels.com/photo/person-taking-photo-of-tower-861093/
 
 
 == Changelog ==
+
+v1.1.0
+-- Added Gallery post format
+-- CSS fixes
+—- sticky header menu button fix
 
 v1.0.10
 -- Site Title alignment

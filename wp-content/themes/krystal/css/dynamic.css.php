@@ -192,6 +192,7 @@ function krystal_dynamic_css_stylesheet() {
     header.menu-wrapper.fixed nav ul li.menu-button a, 
     header.menu-wrapper.style-2.fixed nav ul li.menu-button a{
         color: ' . $top_menu_button_text_color . ' !important;   
+        background: ' . $top_menu_button_color . ';
     }
 
     .slide-bg-section h1,
@@ -274,6 +275,32 @@ if(false===get_theme_mod( 'kr_home_dark_overlay',true)) {
             background: none !important;    
             opacity: 0.8;            
         }           
+    ';  
+}
+
+if(true===get_theme_mod( 'kr_home_disable_section',false)) {
+    $css .='        
+        #parallax-bg,
+        .home-color-section{            
+            display: none;            
+        } 
+
+        .page .page-content-area{
+            margin: 0;
+        }      
+
+        .woocommerce .page-content-area,
+        .woocommerce-page .page-content-area{
+            margin: 70px 0;
+        }          
+
+        .elementor-editor-active header.menu-wrapper{
+            z-index: 0;
+        }
+
+        .home .page-content-area{
+            margin: 0;
+        }
     ';  
 }
 
